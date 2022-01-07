@@ -1,0 +1,99 @@
+-- Instances:
+
+local UnstableDeveloperBetaVersionWarningGui = Instance.new("ScreenGui")
+local UnstableDevBetaWarningNotification = Instance.new("Frame")
+local UnstableDevBetaTitle = Instance.new("TextLabel")
+local UnstableDevBetaRedirect = Instance.new("TextButton")
+local UnstableDevBetaTermAgree = Instance.new("TextButton")
+local UnstableDevBetaWarningText = Instance.new("TextLabel")
+
+--Properties:
+
+UnstableDeveloperBetaVersionWarningGui.Name = "UnstableDeveloperBetaVersionWarningGui"
+UnstableDeveloperBetaVersionWarningGui.Parent = game.CoreGui
+UnstableDeveloperBetaVersionWarningGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UnstableDeveloperBetaVersionWarningGui.ResetOnSpawn = false
+UnstableDeveloperBetaVersionWarningGui.Enabled = true
+
+UnstableDevBetaWarningNotification.Name = "UnstableDevBetaWarningNotification"
+UnstableDevBetaWarningNotification.Parent = UnstableDeveloperBetaVersionWarningGui
+UnstableDevBetaWarningNotification.Active = true
+UnstableDevBetaWarningNotification.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UnstableDevBetaWarningNotification.Position = UDim2.new(0.365103632, 0, -2, 0)
+UnstableDevBetaWarningNotification.Size = UDim2.new(0, 369, 0, 243)
+UnstableDevBetaWarningNotification.Visible = true
+UnstableDevBetaWarningNotification.Draggable = false
+
+UnstableDevBetaTitle.Name = "UnstableDevBetaTitle"
+UnstableDevBetaTitle.Parent = UnstableDevBetaWarningNotification
+UnstableDevBetaTitle.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+UnstableDevBetaTitle.Position = UDim2.new(0, 0, -0.000663851504, 0)
+UnstableDevBetaTitle.Size = UDim2.new(0, 369, 0, 29)
+UnstableDevBetaTitle.Font = Enum.Font.PatrickHand
+UnstableDevBetaTitle.Text = "WARNING!"
+UnstableDevBetaTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnstableDevBetaTitle.TextScaled = true
+UnstableDevBetaTitle.TextSize = 14.000
+UnstableDevBetaTitle.TextWrapped = true
+
+UnstableDevBetaRedirect.Name = "UnstableDevBetaRedirect"
+UnstableDevBetaRedirect.Parent = UnstableDevBetaWarningNotification
+UnstableDevBetaRedirect.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+UnstableDevBetaRedirect.Position = UDim2.new(0.0574441701, 0, 0.851949036, 0)
+UnstableDevBetaRedirect.Size = UDim2.new(0, 325, 0, 28)
+UnstableDevBetaRedirect.Font = Enum.Font.PatrickHand
+UnstableDevBetaRedirect.Text = "I DO NOT acknowledge these terms, redirect me to the stable version."
+UnstableDevBetaRedirect.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnstableDevBetaRedirect.TextScaled = true
+UnstableDevBetaRedirect.TextSize = 14.000
+UnstableDevBetaRedirect.TextWrapped = true
+
+UnstableDevBetaTermAgree.Name = "UnstableDevBetaTermAgree"
+UnstableDevBetaTermAgree.Parent = UnstableDevBetaWarningNotification
+UnstableDevBetaTermAgree.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+UnstableDevBetaTermAgree.Position = UDim2.new(0.0574441701, 0, 0.699685693, 0)
+UnstableDevBetaTermAgree.Size = UDim2.new(0, 325, 0, 28)
+UnstableDevBetaTermAgree.Font = Enum.Font.PatrickHand
+UnstableDevBetaTermAgree.Text = "I acknowledge I am liable for ALL damages that may occur while on the developer beta."
+UnstableDevBetaTermAgree.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnstableDevBetaTermAgree.TextScaled = true
+UnstableDevBetaTermAgree.TextSize = 14.000
+UnstableDevBetaTermAgree.TextWrapped = true
+
+UnstableDevBetaWarningText.Name = "UnstableDevBetaWarningText"
+UnstableDevBetaWarningText.Parent = UnstableDevBetaWarningNotification
+UnstableDevBetaWarningText.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+UnstableDevBetaWarningText.BackgroundTransparency = 1.000
+UnstableDevBetaWarningText.Position = UDim2.new(-0.00271002715, 0, 0.15571475, 0)
+UnstableDevBetaWarningText.Size = UDim2.new(0, 369, 0, 124)
+UnstableDevBetaWarningText.Font = Enum.Font.PatrickHand
+UnstableDevBetaWarningText.Text = "We have detected that you have launched the UNSTABLE version of the BGS script, which is meant for developers and testers. This version most likely will have bugs, and will not be fully complete. If you continue to use this version, you assume full liability for ANY damages that may occur to your BGS data.                                         Do you acknowledge these terms?"
+UnstableDevBetaWarningText.TextColor3 = Color3.fromRGB(0, 255, 255)
+UnstableDevBetaWarningText.TextScaled = true
+UnstableDevBetaWarningText.TextSize = 14.000
+UnstableDevBetaWarningText.TextWrapped = true
+
+--Define Functions
+
+local function RedirectToStableGUI()
+	UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.365103632, 0, -2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 2, true)
+	wait(2.5)
+	UnstableDeveloperBetaVersionWarningGui:Destroy()
+	loadstring(game:HttpGet('https://pastebin.com/raw/Pyh11inF'))()
+end
+
+local function LaunchUnstableBuild()
+	UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.365103632, 0, -2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 2, true)
+	wait(2.5)
+	UnstableDeveloperBetaVersionWarningGui:Destroy()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Sneakificial/BGS-Scripts/main/Unstable%20GUI%20Source?token=GHSAT0AAAAAABQK7MTNHLXHHJ4MGCIFIXBGYOYIOPQ'))()
+end
+
+--Run Functions
+
+UnstableDevBetaRedirect.MouseButton1Click:Connect(RedirectToStableGUI)
+UnstableDevBetaTermAgree.MouseButton1Click:Connect(LaunchUnstableBuild)
+
+--ALL ASSETS NOW LOADED, RUN SCRIPT
+
+UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.365103632, 0, 0.315650046, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, 2, true)
