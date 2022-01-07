@@ -1018,11 +1018,11 @@ UltraCounterTitle.Text = ("Ultra Counter Egg Hatch")
 UltraCounterTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
 UltraCounterMenu.Text = ("Ultra Egg Hatch With Counter Menu")
 UltraCounterMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
-CurrentVersion.Text = ("Version 2.9.9 [UNSTABLE]")
+CurrentVersion.Text = ("Version 2.9.9B [UNSTABLE]")
 CurrentVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
 ChangelogMenu.Text = ("Changelog")
 ChangelogMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
-ChangelogInformation.Text = ("2/6/2021 | - Released a new changelog feature! This marks the start of version 2.0.                       2/6/2021 6:53PM EST | Added a verification feature so only people that are verified by the creator can use the script. If you are not verified, it autokicks the player.        2/9/2021 | - Released a new menu called 'Blow Bubbles'. It will auto blow bubbles for you the whole time without having to click! * This however does not override the normal Roblox game timeout. (Development Scriping Updates) ^ Fixed code being public inside the verification GUI. It is now hidden safely. This will help avoid people bypassing the auto-kick for no whitelist. (Development Plans) & We plan to add features such as the ability for protections that auto kick you when moderators of BGS join your game. And we also plan to add auto-claim features. 2/13/2021 // Version 2.9.1 | - Due to a fair amount of requests, I have added a stop auto hatch to the counter version! When you click it, it halts the script and your ping will slowly drop and you will stop opening eggs. For low end computers, rejoins may be required after stopping.                      2/14/2021 // Version 2.9.2 | - Fixed a issue where the client would get kicked for unexpected behavior when using the ultra egg hatch feature for too long. We have also found out there is a 2.68 second delay between opening the eggs and firing, and it accepts fires after 2.68 seconds of the last remote fired. This is in testing right now, and will be announced if it is a valid fix or not on 2/15/2021 in either the morning or afternoon. Once tested, if it worked you will see the version return to 'Version 2.9.2'. If this fix didn't work, it will say for the version '2.9.2 [UNSTABLE]'.                      2/16/2021 // Version 2.9.3 | -Added a protections menu. - Added a feature that makes it so you do not get kicked for being AFK. This can be found in the protections menu, and we will probably be adding lots of protections, which is why the window is so big. We also plan to make another window for in-game features that is also bigger as well. Due to this, the main GUI size may change soon.                                                          3/6/2021 // Version 2.9.4 | -Made all of the frames draggable as per user request! * Working on a feature that will allow you to see the time and date, and soon server uptime. I cannot release it right now as it doesn't work. - Made the menu payed. It is currently $20 for lifetime VIP access, however that is temporary and will have a new price once standard & essential are done.           3/11/2021 // Version 2.9.5 | -Made a streamer mode feature! This will change everyones name and remove your BGS stats. This is helpful to be sure you can't be detected when exploiting and streaming. This could even be used to blame people for things.                3/13/2021 // Version 2.9.9 | -Added mod protection! It will auto kick you if a mod joins your current game. Due to how severe it is if a bug occurs with this feature, please report any bugs ASAP. -Added a built-in executor! You can now execute scripts in game and prevent being tracked by your own executor! -Added it so you can auto-claim the travelling merchant, daily reward, spin the wheel, shard shop, and brew potions! - Added a admin command bar! You can now execute commands without having to open the menu needed to run it! 5/2/2021 // Development Update | -We have now moved our project to our GitHub project due to us needing to edit scripts together, especially for the in-game value list script that we are making soon.")
+ChangelogInformation.Text = ("2/6/2021 | - Released a new changelog feature! This marks the start of version 2.0.                       2/6/2021 6:53PM EST | Added a verification feature so only people that are verified by the creator can use the script. If you are not verified, it autokicks the player.        2/9/2021 | - Released a new menu called 'Blow Bubbles'. It will auto blow bubbles for you the whole time without having to click! * This however does not override the normal Roblox game timeout. (Development Scriping Updates) ^ Fixed code being public inside the verification GUI. It is now hidden safely. This will help avoid people bypassing the auto-kick for no whitelist. (Development Plans) & We plan to add features such as the ability for protections that auto kick you when moderators of BGS join your game. And we also plan to add auto-claim features. 2/13/2021 // Version 2.9.1 | - Due to a fair amount of requests, I have added a stop auto hatch to the counter version! When you click it, it halts the script and your ping will slowly drop and you will stop opening eggs. For low end computers, rejoins may be required after stopping.                      2/14/2021 // Version 2.9.2 | - Fixed a issue where the client would get kicked for unexpected behavior when using the ultra egg hatch feature for too long. We have also found out there is a 2.68 second delay between opening the eggs and firing, and it accepts fires after 2.68 seconds of the last remote fired. This is in testing right now, and will be announced if it is a valid fix or not on 2/15/2021 in either the morning or afternoon. Once tested, if it worked you will see the version return to 'Version 2.9.2'. If this fix didn't work, it will say for the version '2.9.2 [UNSTABLE]'.                      2/16/2021 // Version 2.9.3 | -Added a protections menu. - Added a feature that makes it so you do not get kicked for being AFK. This can be found in the protections menu, and we will probably be adding lots of protections, which is why the window is so big. We also plan to make another window for in-game features that is also bigger as well. Due to this, the main GUI size may change soon.                                                          3/6/2021 // Version 2.9.4 | -Made all of the frames draggable as per user request! * Working on a feature that will allow you to see the time and date, and soon server uptime. I cannot release it right now as it doesn't work. - Made the menu payed. It is currently $20 for lifetime VIP access, however that is temporary and will have a new price once standard & essential are done.           3/11/2021 // Version 2.9.5 | -Made a streamer mode feature! This will change everyones name and remove your BGS stats. This is helpful to be sure you can't be detected when exploiting and streaming. This could even be used to blame people for things.                3/13/2021 // Version 2.9.9 | -Added mod protection! It will auto kick you if a mod joins your current game. Due to how severe it is if a bug occurs with this feature, please report any bugs ASAP. -Added a built-in executor! You can now execute scripts in game and prevent being tracked by your own executor! -Added it so you can auto-claim the travelling merchant, daily reward, spin the wheel, shard shop, and brew potions! - Added a admin command bar! You can now execute commands without having to open the menu needed to run it! 5/2/2021 // Development Update | -We have now moved our project to our GitHub project due to us needing to edit scripts together, especially for the in-game value list script that we are making soon. 1/7/2022 // Version 2.9.9B | After quite a long time, a new hatch summary page was added! It will display APROXIMATE total hatched, start time, and end time values. It also has a new, slick design that we hope to add to the whole GUI in versions to come. Loadstring requests are also starting to be moved to GitHub! This update will currently be on only the UNSTABLE branch, as it is being actively tested. Next update, we will be adding a auto-update system, as long as a new Roadmap section, where you can see what we plan to add in updates to come.")
 ChangelogInformation.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseChangelog.Text = ("X")
 CloseChangelog.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1143,7 +1143,7 @@ ScrollingChangelog.ScrollBarImageTransparency = (0.3)
 ScrollingChangelog.ScrollBarThickness = (13)
 ScrollingChangelog.ScrollingEnabled = true
 ScrollingChangelog.VerticalScrollBarPosition = ("Left")
-ScrollingChangelog.CanvasSize = UDim2.new(0, 0, 6.4, 0)
+ScrollingChangelog.CanvasSize = UDim2.new(0, 0, 7.4, 0)
 
 
 --Position
@@ -1600,7 +1600,179 @@ function TeleportToPotionBrewFunct()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1740.39026, 2705.99048, 11045.3525, -0.964207292, -9.08030768e-17, 0.265149534, -9.52319871e-17, 1, -3.8480256e-18, -0.265149534, -2.89610127e-17, -0.964207292)
 end
 
+--Define Summary GUI Values
+local UltraEggHatchSummaryEggHatchStartValue = 0
+local UltraEggHatchSummaryStartUNIXTime = 0
+local UltraEggHatchSummaryEndUNIXTime = 0
+local UltraEggHatchSummaryEggHatchEndValue = 0
+
+function NoteEndUNIXTimeAndEggCount()
+	UltraEggHatchSummaryEndUNIXTime = os.time()
+	UltraEggHatchSummaryEggHatchEndValue = game.Players.LocalPlayer.leaderstats["Eggs Opened"].Value
+end
+
+function DeployEggHatchSummaryPage()
+	wait(2)
+	-- Instances:
+
+	local UltraEggHatchSummaryFrame = Instance.new("Frame")
+	local UltraEggHatchSummaryHatchTitle = Instance.new("TextLabel")
+	local UltraEggHatchSummaryTitle = Instance.new("TextLabel")
+	local UltraEggHatchSummaryHatchStartTimeValueLabel = Instance.new("TextLabel")
+	local UltraEggHatchSummaryHatchValueLabel = Instance.new("TextLabel")
+	local UltraEggHatchSummaryHatchEndTimeValueLabel = Instance.new("TextLabel")
+	local UltraEggHatchSummaryHatchStartTimeTitle = Instance.new("TextLabel")
+	local UltraEggHatchSummaryHatchEndTimeTitle = Instance.new("TextLabel")
+	local UltraEggHatchSummaryCloseButton = Instance.new("TextButton")
+	local UltraEggHatchSummaryUICorner = Instance.new("UICorner")
+
+	--Properties:
+
+	UltraEggHatchSummaryFrame.Name = "UltraEggHatchSummaryFrame"
+	UltraEggHatchSummaryFrame.Parent = ScreenGui
+	UltraEggHatchSummaryFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	UltraEggHatchSummaryFrame.BorderColor3 = Color3.fromRGB(31, 31, 31)
+	UltraEggHatchSummaryFrame.BorderSizePixel = 2
+	UltraEggHatchSummaryFrame.Position = UDim2.new(0.2995857, 115, -2, 58)
+	UltraEggHatchSummaryFrame.Size = UDim2.new(0, 539, 0, 578)
+	UltraEggHatchSummaryFrame.Draggable = false
+	UltraEggHatchSummaryFrame.Visible = false
+
+	UltraEggHatchSummaryHatchTitle.Name = "UltraEggHatchSummaryHatchTitle"
+	UltraEggHatchSummaryHatchTitle.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryHatchTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchTitle.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryHatchTitle.BorderSizePixel = 0
+	UltraEggHatchSummaryHatchTitle.Position = UDim2.new(0.256960273, 0, 0.103806227, 0)
+	UltraEggHatchSummaryHatchTitle.Size = UDim2.new(0, 261, 0, 24)
+	UltraEggHatchSummaryHatchTitle.Font = Enum.Font.FredokaOne
+	UltraEggHatchSummaryHatchTitle.Text = "You opened..."
+	UltraEggHatchSummaryHatchTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchTitle.TextScaled = true
+	UltraEggHatchSummaryHatchTitle.TextSize = 30.000
+	UltraEggHatchSummaryHatchTitle.TextWrapped = true
+
+	UltraEggHatchSummaryTitle.Name = "UltraEggHatchSummaryTitle"
+	UltraEggHatchSummaryTitle.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryTitle.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryTitle.BorderSizePixel = 0
+	UltraEggHatchSummaryTitle.Position = UDim2.new(0.186459348, 0, 0, 0)
+	UltraEggHatchSummaryTitle.Size = UDim2.new(0, 337, 0, 40)
+	UltraEggHatchSummaryTitle.Font = Enum.Font.Gotham
+	UltraEggHatchSummaryTitle.Text = "Hatching Summary"
+	UltraEggHatchSummaryTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryTitle.TextScaled = true
+	UltraEggHatchSummaryTitle.TextSize = 30.000
+	UltraEggHatchSummaryTitle.TextWrapped = true
+
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Name = "UltraEggHatchSummaryHatchStartTimeValueLabel"
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryHatchStartTimeValueLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchStartTimeValueLabel.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryHatchStartTimeValueLabel.BorderSizePixel = 0
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Position = UDim2.new(0.0269046146, 0, 0.333910048, 0)
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Size = UDim2.new(0, 508, 0, 24)
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Font = Enum.Font.Highway
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Text = "%A, %B %d, %Y at %I:%M:%S %p, %Z."
+	UltraEggHatchSummaryHatchStartTimeValueLabel.TextColor3 = Color3.fromRGB(0, 255, 234)
+	UltraEggHatchSummaryHatchStartTimeValueLabel.TextScaled = true
+	UltraEggHatchSummaryHatchStartTimeValueLabel.TextSize = 30.000
+	UltraEggHatchSummaryHatchStartTimeValueLabel.TextWrapped = true
+
+	UltraEggHatchSummaryHatchValueLabel.Name = "UltraEggHatchSummaryHatchValueLabel"
+	UltraEggHatchSummaryHatchValueLabel.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryHatchValueLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchValueLabel.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryHatchValueLabel.BorderSizePixel = 0
+	UltraEggHatchSummaryHatchValueLabel.Position = UDim2.new(0.0269046146, 0, 0.186851203, 0)
+	UltraEggHatchSummaryHatchValueLabel.Size = UDim2.new(0, 508, 0, 24)
+	UltraEggHatchSummaryHatchValueLabel.Font = Enum.Font.Highway
+	UltraEggHatchSummaryHatchValueLabel.Text = "UltraEggHatchSummaryEggHatchTotalValue .. \" Eggs\""
+	UltraEggHatchSummaryHatchValueLabel.TextColor3 = Color3.fromRGB(0, 255, 234)
+	UltraEggHatchSummaryHatchValueLabel.TextScaled = true
+	UltraEggHatchSummaryHatchValueLabel.TextSize = 30.000
+	UltraEggHatchSummaryHatchValueLabel.TextWrapped = true
+
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Name = "UltraEggHatchSummaryHatchEndTimeValueLabel"
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryHatchEndTimeValueLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchEndTimeValueLabel.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryHatchEndTimeValueLabel.BorderSizePixel = 0
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Position = UDim2.new(0.0269046146, 0, 0.477508664, 0)
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Size = UDim2.new(0, 508, 0, 24)
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Font = Enum.Font.Highway
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Text = "%A, %B %d, %Y at %I:%M:%S %p, %Z."
+	UltraEggHatchSummaryHatchEndTimeValueLabel.TextColor3 = Color3.fromRGB(0, 255, 234)
+	UltraEggHatchSummaryHatchEndTimeValueLabel.TextScaled = true
+	UltraEggHatchSummaryHatchEndTimeValueLabel.TextSize = 30.000
+	UltraEggHatchSummaryHatchEndTimeValueLabel.TextWrapped = true
+
+	UltraEggHatchSummaryHatchStartTimeTitle.Name = "UltraEggHatchSummaryHatchStartTimeTitle"
+	UltraEggHatchSummaryHatchStartTimeTitle.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryHatchStartTimeTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchStartTimeTitle.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryHatchStartTimeTitle.BorderSizePixel = 0
+	UltraEggHatchSummaryHatchStartTimeTitle.Position = UDim2.new(0.256960273, 0, 0.264705867, 0)
+	UltraEggHatchSummaryHatchStartTimeTitle.Size = UDim2.new(0, 261, 0, 24)
+	UltraEggHatchSummaryHatchStartTimeTitle.Font = Enum.Font.FredokaOne
+	UltraEggHatchSummaryHatchStartTimeTitle.Text = "You started hatching on..."
+	UltraEggHatchSummaryHatchStartTimeTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchStartTimeTitle.TextScaled = true
+	UltraEggHatchSummaryHatchStartTimeTitle.TextSize = 30.000
+	UltraEggHatchSummaryHatchStartTimeTitle.TextWrapped = true
+
+	UltraEggHatchSummaryHatchEndTimeTitle.Name = "UltraEggHatchSummaryHatchEndTimeTitle"
+	UltraEggHatchSummaryHatchEndTimeTitle.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryHatchEndTimeTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchEndTimeTitle.BackgroundTransparency = 1.000
+	UltraEggHatchSummaryHatchEndTimeTitle.BorderSizePixel = 0
+	UltraEggHatchSummaryHatchEndTimeTitle.Position = UDim2.new(0.256960273, 0, 0.413494796, 0)
+	UltraEggHatchSummaryHatchEndTimeTitle.Size = UDim2.new(0, 261, 0, 24)
+	UltraEggHatchSummaryHatchEndTimeTitle.Font = Enum.Font.FredokaOne
+	UltraEggHatchSummaryHatchEndTimeTitle.Text = "And stopped hatching on..."
+	UltraEggHatchSummaryHatchEndTimeTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryHatchEndTimeTitle.TextScaled = true
+	UltraEggHatchSummaryHatchEndTimeTitle.TextSize = 30.000
+	UltraEggHatchSummaryHatchEndTimeTitle.TextWrapped = true
+
+	UltraEggHatchSummaryCloseButton.Name = "UltraEggHatchSummaryCloseButton"
+	UltraEggHatchSummaryCloseButton.Parent = UltraEggHatchSummaryFrame
+	UltraEggHatchSummaryCloseButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+	UltraEggHatchSummaryCloseButton.BorderSizePixel = 0
+	UltraEggHatchSummaryCloseButton.Position = UDim2.new(0.232588843, 0, 0.916587591, 0)
+	UltraEggHatchSummaryCloseButton.Size = UDim2.new(0, 287, 0, 33)
+	UltraEggHatchSummaryCloseButton.Font = Enum.Font.Gotham
+	UltraEggHatchSummaryCloseButton.Text = "Close Summary"
+	UltraEggHatchSummaryCloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UltraEggHatchSummaryCloseButton.TextSize = 20.000
+
+	UltraEggHatchSummaryUICorner.CornerRadius = UDim.new(0, 15)
+	UltraEggHatchSummaryUICorner.Name = "UltraEggHatchSummaryUICorner"
+	UltraEggHatchSummaryUICorner.Parent = UltraEggHatchSummaryCloseButton
+	
+	--Preasset Load
+	UltraEggHatchSummaryHatchValueLabel.Text = UltraEggHatchSummaryEggHatchEndValue - UltraEggHatchSummaryEggHatchStartValue .. " Eggs"
+	UltraEggHatchSummaryHatchStartTimeValueLabel.Text = os.date("%A, %B %d, %Y at %I:%M:%S %p, %Z.", UltraEggHatchSummaryStartUNIXTime)
+	UltraEggHatchSummaryHatchEndTimeValueLabel.Text = os.date("%A, %B %d, %Y at %I:%M:%S %p, %Z.", UltraEggHatchSummaryEndUNIXTime)
+	
+	--Function Preasset Load
+	function CloseUltraEggHatchSummary()
+		UltraEggHatchSummaryFrame:TweenPosition(UDim2.new(0.2995857, 115, -2, 58), Enum.EasingDirection.In, Enum.EasingStyle.Elastic, 2, true)
+		wait(2.5)
+		UltraEggHatchSummaryFrame:Destroy()
+	end
+	
+	UltraEggHatchSummaryCloseButton.MouseButton1Click:Connect(CloseUltraEggHatchSummary)
+	
+	--ALL ASSETS LOADED, RUN FUNCTION
+	UltraEggHatchSummaryFrame.Visible = true
+	UltraEggHatchSummaryFrame:TweenPosition(UDim2.new(0.2995857, 115, 0.146279901, 58), Enum.EasingDirection.Out, Enum.EasingStyle.Elastic, 2, true)
+end
+
 function StartUltraCounter()
+	UltraEggHatchSummaryStartUNIXTime = os.time()
+	UltraEggHatchSummaryEggHatchStartValue = game.Players.LocalPlayer.leaderstats["Eggs Opened"].Value
 	UltraEggHatchValue = 1
 	
 	local EggsFired = Instance.new("ScreenGui")
@@ -2459,6 +2631,8 @@ ClaimShardRewards.MouseButton1Click:Connect(ClaimShardRewardsFunct)
 EnableAutoClaimShardRewards.MouseButton1Click:Connect(EnableAutoShardRewardsFunct)
 DisableAutoClaimShardRewards.MouseButton1Click:Connect(DisableAutoShardRewardsFunct)
 TeleporttoBrewPotionRoom.MouseButton1Click:Connect(TeleportToPotionBrewFunct)
+UltraCounterStop.MouseButton1Click:Connect(NoteEndUNIXTimeAndEggCount)
+UltraCounterStop.MouseButton1Click:Connect(DeployEggHatchSummaryPage)
 
 
 
