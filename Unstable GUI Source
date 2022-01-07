@@ -1,0 +1,2596 @@
+local ScreenGui = Instance.new("ScreenGui")
+local MainGUI = Instance.new("Frame")
+local UltraFrame = Instance.new("Frame")
+local CloseMenu = Instance.new("TextButton")
+local OpenMenu = Instance.new("TextButton")
+local CloseUltra = Instance.new("TextButton")
+local UltraMenu = Instance.new("TextButton")
+local UltraStart = Instance.new("TextButton")
+local EggName = Instance.new("TextBox")
+local guiname = Instance.new("TextLabel")
+local UltraTitle = Instance.new("TextLabel")
+local UltraCounterFrame = Instance.new("Frame")
+local CloseUltraCounter = Instance.new("TextButton")
+local CounterEggName = Instance.new("TextBox")
+local CounterEggCost = Instance.new("TextBox")
+local UltraCounterStart = Instance.new("TextButton")
+local UltraCounterTitle = Instance.new("TextLabel")
+local UltraCounterMenu = Instance.new("TextButton")
+local CurrentVersion = Instance.new("TextLabel")
+local ChangelogMenu = Instance.new("TextButton")
+local ChangelogFrame = Instance.new("Frame")
+local ScrollingChangelog = Instance.new("ScrollingFrame")
+local ChangelogTitle = Instance.new("TextLabel")
+local ChangelogInformation = Instance.new("TextLabel")
+local CloseChangelog = Instance.new("TextButton")
+local BlowBubblesMenu = Instance.new("TextButton")
+local BlowBubblesFrame = Instance.new("Frame")
+local CloseBlowBubbles = Instance.new("TextButton")
+local BlowBubblesStart = Instance.new("TextButton")
+local BlowBubblesStop = Instance.new("TextButton")
+local BlowBubblesTitle = Instance.new("TextLabel")
+local UltraCounterStop = Instance.new("TextButton")
+local ProtectionsMenu = Instance.new("TextButton")
+local ProtectionsFrame = Instance.new("Frame")
+local CloseProtectionMenu = Instance.new("TextButton")
+local AntiAFKMenuProtectionButton = Instance.new("TextButton")
+local ProtectionsMenuTitle = Instance.new("TextLabel")
+local AntiAFKProtectionMenuFrame = Instance.new("Frame")
+local AntiAFKStart = Instance.new("TextButton")
+local CloseAntiAFKMenu = Instance.new("TextButton")
+local AntiAFKTitle = Instance.new("TextLabel")
+local UserTimeFrame = Instance.new("Frame")
+local UserTimeName = Instance.new("TextLabel")
+local CloseTimeMenu = Instance.new("TextButton")
+local OpenTimeMenu = Instance.new("TextButton")
+local UserTimeDate = Instance.new("TextLabel")
+local UserTimeTime = Instance.new("TextLabel")
+local Page2PageMenu = Instance.new("TextButton")
+local Page2Frame = Instance.new("Frame")
+local Page2Title = Instance.new("TextLabel")
+local StreamerModePage2Button = Instance.new("TextButton")
+local ClosePage2Menu = Instance.new("TextButton")
+local StreamerModeFrame = Instance.new("Frame")
+local StreamerModeTitle = Instance.new("TextLabel")
+local StreamerModeSetSelfName = Instance.new("TextBox")
+local StreamerModeEnable = Instance.new("TextButton")
+local CloseStreamerModeMenu = Instance.new("TextButton")
+local StreamerModeSetOthersNames = Instance.new("TextBox")
+local StreamerModeDisableInfo = Instance.new("TextLabel")
+local ModProtectionMenuProtectionButton = Instance.new("TextButton")
+local ModProtectionMenuFrame = Instance.new("Frame")
+local ModProtectionTitle = Instance.new("TextLabel")
+local ModProtectionStart = Instance.new("TextButton")
+local CloseModProtectionMenu = Instance.new("TextButton")
+local ModProtectionStop = Instance.new("TextButton")
+local BuiltInExecutorPage2Button = Instance.new("TextButton")
+local BuiltInExecutorFrame = Instance.new("Frame")
+local BuiltInExecutorSourceFrame = Instance.new("ScrollingFrame")
+local BuiltInExecutorSourceFrameTextBox = Instance.new("TextBox")
+local BuiltInExecutorExecuteButton = Instance.new("TextButton")
+local BuiltInExecutorExecuteButtonUICorner = Instance.new("UICorner")
+local BuiltInExecutorClearButton = Instance.new("TextButton")
+local BuiltInExecutorClearButtonUICorner = Instance.new("UICorner")
+local BuiltInExecutorCloseButton = Instance.new("TextButton")
+local BuiltInExecutorCloseButtonUICorner = Instance.new("UICorner")
+local BuiltInExecutorTitle = Instance.new("TextLabel")
+local BuiltInExecutorVersion = Instance.new("TextLabel")
+local ClaimRewardsAutomaticallyPage2Button = Instance.new("TextButton")
+local ClaimRewardsAutomaticallyFrame = Instance.new("Frame")
+local ClaimRewardsAutomaticallyTitle = Instance.new("TextLabel")
+local TeleportToMerchantButton = Instance.new("TextButton")
+local CloseClaimRewardsAutomaticallyMenu = Instance.new("TextButton")
+local ClaimRewardsTeleportToClaimRewardsButton = Instance.new("TextButton")
+local TeleportToSpinTheWheel = Instance.new("TextButton")
+local BuyMerchantItem2Button = Instance.new("TextButton")
+local BuyMerchantItem1Button = Instance.new("TextButton")
+local BuyMerchantItem3Button = Instance.new("TextButton")
+local ClaimRewardsClaimReward = Instance.new("TextButton")
+local ClaimRewardsEnableAutoClaimReward = Instance.new("TextButton")
+local TeleporttoBrewPotionRoom = Instance.new("TextButton")
+local ClaimRewardsDisableAutoClaimReward = Instance.new("TextButton")
+local SpinTheWheel = Instance.new("TextButton")
+local AutomaticallySpinTheWheelEnable = Instance.new("TextButton")
+local SetShardAutoDifficultyAutoAssign = Instance.new("TextBox")
+local SpinTheWheelAutoEnableWarning = Instance.new("TextLabel")
+local AutomaticallySpinTheWheelDisable = Instance.new("TextButton")
+local TeleporttoShardShop = Instance.new("TextButton")
+local ClaimShardRewards = Instance.new("TextButton")
+local EnableAutoClaimShardRewards = Instance.new("TextButton")
+local DisableAutoClaimShardRewards = Instance.new("TextButton")
+local TeleporttoBrewPotionRoom = Instance.new("TextButton")
+local TeleporttoShardRewards = Instance.new("TextButton")
+
+--Draggable
+MainGUI.Draggable = true
+UltraFrame.Draggable = true
+UltraCounterFrame.Draggable = true
+ChangelogFrame.Draggable = true
+BlowBubblesFrame.Draggable = true
+ProtectionsFrame.Draggable = true
+AntiAFKProtectionMenuFrame.Draggable = true
+UserTimeFrame.Draggable = true
+Page2Frame.Draggable = true
+StreamerModeFrame.Draggable = true
+ModProtectionMenuFrame.Draggable = true
+ClaimRewardsAutomaticallyFrame.Draggable = true
+
+--TimeDateGUI
+UserTimeFrame.Name = "UserTimeFrame"
+UserTimeFrame.Parent = ScreenGui
+UserTimeFrame.Active = true
+UserTimeFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UserTimeFrame.Position = UDim2.new(0.758589983, 0, 0.057239335, 0)
+UserTimeFrame.Size = UDim2.new(0, 288, 0, 162)
+UserTimeFrame.Draggable = true
+
+--Page2MenuButton
+Page2PageMenu.Name = "Page2PageMenu"
+Page2PageMenu.Parent = MainGUI
+Page2PageMenu.BackgroundColor3 = Color3.fromRGB(98, 255, 0)
+Page2PageMenu.Position = UDim2.new(0.683827758, 0, 0.562589407, 0)
+Page2PageMenu.Size = UDim2.new(0, 79, 0, 37)
+Page2PageMenu.Font = Enum.Font.PatrickHand
+Page2PageMenu.Text = "Page 2"
+Page2PageMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+Page2PageMenu.TextScaled = true
+Page2PageMenu.TextSize = 14.000
+Page2PageMenu.TextWrapped = true
+
+--Page2Frame
+Page2Frame.Name = "Page2Frame"
+Page2Frame.Parent = ScreenGui
+Page2Frame.Active = true
+Page2Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Page2Frame.Position = UDim2.new(0.219649151, 0, 0.16902183, 0)
+Page2Frame.Size = UDim2.new(0, 867, 0, 437)
+
+Page2Title.Name = "Page2Title"
+Page2Title.Parent = Page2Frame
+Page2Title.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+Page2Title.Position = UDim2.new(0, 0, -0.000663809711, 0)
+Page2Title.Size = UDim2.new(0, 833, 0, 29)
+Page2Title.Font = Enum.Font.PatrickHand
+Page2Title.Text = "Page 2"
+Page2Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Page2Title.TextScaled = true
+Page2Title.TextSize = 14.000
+Page2Title.TextWrapped = true
+
+StreamerModePage2Button.Name = "StreamerModePage2Button"
+StreamerModePage2Button.Parent = Page2Frame
+StreamerModePage2Button.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+StreamerModePage2Button.Position = UDim2.new(0.0618698671, 0, 0.123568811, 0)
+StreamerModePage2Button.Size = UDim2.new(0, 87, 0, 30)
+StreamerModePage2Button.Font = Enum.Font.PatrickHand
+StreamerModePage2Button.Text = "Streamer Mode Menu"
+StreamerModePage2Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModePage2Button.TextScaled = true
+StreamerModePage2Button.TextSize = 14.000
+StreamerModePage2Button.TextWrapped = true
+
+ClosePage2Menu.Name = "ClosePage2Menu"
+ClosePage2Menu.Parent = Page2Frame
+ClosePage2Menu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+ClosePage2Menu.Position = UDim2.new(0.961847007, 0, -0.00162085984, 0)
+ClosePage2Menu.Size = UDim2.new(0, 33, 0, 28)
+ClosePage2Menu.Font = Enum.Font.PatrickHand
+ClosePage2Menu.Text = "X"
+ClosePage2Menu.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClosePage2Menu.TextScaled = true
+ClosePage2Menu.TextSize = 14.000
+ClosePage2Menu.TextWrapped = true
+
+--StreamerModeFrame
+StreamerModeFrame.Name = "StreamerModeFrame"
+StreamerModeFrame.Parent = ScreenGui
+StreamerModeFrame.Active = true
+StreamerModeFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeFrame.Position = UDim2.new(0.306194603, 0, 0.345758975, 0)
+StreamerModeFrame.Size = UDim2.new(0, 512, 0, 254)
+
+StreamerModeTitle.Name = "StreamerModeTitle"
+StreamerModeTitle.Parent = StreamerModeFrame
+StreamerModeTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+StreamerModeTitle.Position = UDim2.new(0, 0, -0.000663817395, 0)
+StreamerModeTitle.Size = UDim2.new(0, 478, 0, 29)
+StreamerModeTitle.Font = Enum.Font.PatrickHand
+StreamerModeTitle.Text = "Streamer Mode"
+StreamerModeTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeTitle.TextScaled = true
+StreamerModeTitle.TextSize = 14.000
+StreamerModeTitle.TextWrapped = true
+
+StreamerModeSetSelfName.Name = "StreamerModeSetSelfName"
+StreamerModeSetSelfName.Parent = StreamerModeFrame
+StreamerModeSetSelfName.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+StreamerModeSetSelfName.Position = UDim2.new(0.0390283316, 0, 0.340363204, 0)
+StreamerModeSetSelfName.Size = UDim2.new(0, 200, 0, 50)
+StreamerModeSetSelfName.Font = Enum.Font.PatrickHand
+StreamerModeSetSelfName.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeSetSelfName.PlaceholderText = "Set Name for Self"
+StreamerModeSetSelfName.Text = "Set Name for Self"
+StreamerModeSetSelfName.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeSetSelfName.TextScaled = true
+StreamerModeSetSelfName.TextSize = 14.000
+StreamerModeSetSelfName.TextWrapped = true
+
+StreamerModeEnable.Name = "StreamerModeEnable"
+StreamerModeEnable.Parent = StreamerModeFrame
+StreamerModeEnable.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+StreamerModeEnable.Position = UDim2.new(0.398219615, 0, 0.721462488, 0)
+StreamerModeEnable.Size = UDim2.new(0, 89, 0, 28)
+StreamerModeEnable.Font = Enum.Font.PatrickHand
+StreamerModeEnable.Text = "Enable"
+StreamerModeEnable.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeEnable.TextScaled = true
+StreamerModeEnable.TextSize = 14.000
+StreamerModeEnable.TextWrapped = true
+
+CloseStreamerModeMenu.Name = "CloseStreamerModeMenu"
+CloseStreamerModeMenu.Parent = StreamerModeFrame
+CloseStreamerModeMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CloseStreamerModeMenu.Position = UDim2.new(0.934165359, 0, -0.00390918925, 0)
+CloseStreamerModeMenu.Size = UDim2.new(0, 33, 0, 28)
+CloseStreamerModeMenu.Font = Enum.Font.PatrickHand
+CloseStreamerModeMenu.Text = "X"
+CloseStreamerModeMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseStreamerModeMenu.TextScaled = true
+CloseStreamerModeMenu.TextSize = 14.000
+CloseStreamerModeMenu.TextWrapped = true
+
+StreamerModeSetOthersNames.Name = "StreamerModeSetOthersNames"
+StreamerModeSetOthersNames.Parent = StreamerModeFrame
+StreamerModeSetOthersNames.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+StreamerModeSetOthersNames.Position = UDim2.new(0.529262722, 0, 0.340363204, 0)
+StreamerModeSetOthersNames.Size = UDim2.new(0, 200, 0, 50)
+StreamerModeSetOthersNames.Font = Enum.Font.PatrickHand
+StreamerModeSetOthersNames.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeSetOthersNames.PlaceholderText = "Enter Name to Set for Others"
+StreamerModeSetOthersNames.Text = "Enter Name to Set for Others"
+StreamerModeSetOthersNames.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamerModeSetOthersNames.TextScaled = true
+StreamerModeSetOthersNames.TextSize = 14.000
+StreamerModeSetOthersNames.TextWrapped = true
+
+StreamerModeDisableInfo.Name = "StreamerModeDisableInfo"
+StreamerModeDisableInfo.Parent = StreamerModeFrame
+StreamerModeDisableInfo.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+StreamerModeDisableInfo.BackgroundTransparency = 1.000
+StreamerModeDisableInfo.Position = UDim2.new(0.583984375, 0, 0.537213683, 0)
+StreamerModeDisableInfo.Size = UDim2.new(0, 211, 0, 117)
+StreamerModeDisableInfo.Font = Enum.Font.PatrickHand
+StreamerModeDisableInfo.Text = "Please note that this CANNOT be disabled via this menu! Please leave the game and rejoin to reset this! However, you do NOT need to rejoin to change the values above."
+StreamerModeDisableInfo.TextColor3 = Color3.fromRGB(255, 247, 1)
+StreamerModeDisableInfo.TextScaled = true
+StreamerModeDisableInfo.TextSize = 14.000
+StreamerModeDisableInfo.TextWrapped = true
+
+--ModProtectionMenuButton
+ModProtectionMenuProtectionButton.Name = "ModProtectionMenuProtectionButton"
+ModProtectionMenuProtectionButton.Parent = ProtectionsFrame
+ModProtectionMenuProtectionButton.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+ModProtectionMenuProtectionButton.Position = UDim2.new(0.200278163, 0, 0.123568811, 0)
+ModProtectionMenuProtectionButton.Size = UDim2.new(0, 87, 0, 30)
+ModProtectionMenuProtectionButton.Font = Enum.Font.PatrickHand
+ModProtectionMenuProtectionButton.Text = "Mod Protection"
+ModProtectionMenuProtectionButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ModProtectionMenuProtectionButton.TextScaled = true
+ModProtectionMenuProtectionButton.TextSize = 14.000
+ModProtectionMenuProtectionButton.TextWrapped = true
+
+--ModProtectionFrame
+ModProtectionMenuFrame.Name = "ModProtectionMenuFrame"
+ModProtectionMenuFrame.Parent = ScreenGui
+ModProtectionMenuFrame.Active = true
+ModProtectionMenuFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ModProtectionMenuFrame.Position = UDim2.new(0.410194576, 0, 0.383523345, 0)
+ModProtectionMenuFrame.Size = UDim2.new(0, 246, 0, 154)
+
+ModProtectionTitle.Name = "ModProtectionTitle"
+ModProtectionTitle.Parent = ModProtectionMenuFrame
+ModProtectionTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+ModProtectionTitle.Position = UDim2.new(0, 0, -0.000663856394, 0)
+ModProtectionTitle.Size = UDim2.new(0, 212, 0, 29)
+ModProtectionTitle.Font = Enum.Font.PatrickHand
+ModProtectionTitle.Text = "Mod Protection"
+ModProtectionTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+ModProtectionTitle.TextScaled = true
+ModProtectionTitle.TextSize = 14.000
+ModProtectionTitle.TextWrapped = true
+
+ModProtectionStart.Name = "ModProtectionStart"
+ModProtectionStart.Parent = ModProtectionMenuFrame
+ModProtectionStart.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+ModProtectionStart.Position = UDim2.new(0.0655743033, 0, 0.4733482, 0)
+ModProtectionStart.Size = UDim2.new(0, 89, 0, 28)
+ModProtectionStart.Font = Enum.Font.PatrickHand
+ModProtectionStart.Text = "Enable"
+ModProtectionStart.TextColor3 = Color3.fromRGB(0, 0, 0)
+ModProtectionStart.TextScaled = true
+ModProtectionStart.TextSize = 14.000
+ModProtectionStart.TextWrapped = true
+
+CloseModProtectionMenu.Name = "CloseModProtectionMenu"
+CloseModProtectionMenu.Parent = ModProtectionMenuFrame
+CloseModProtectionMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CloseModProtectionMenu.Position = UDim2.new(0.865059674, 0, 0.00258431723, 0)
+CloseModProtectionMenu.Size = UDim2.new(0, 33, 0, 28)
+CloseModProtectionMenu.Font = Enum.Font.PatrickHand
+CloseModProtectionMenu.Text = "X"
+CloseModProtectionMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseModProtectionMenu.TextScaled = true
+CloseModProtectionMenu.TextSize = 14.000
+CloseModProtectionMenu.TextWrapped = true
+
+ModProtectionStop.Name = "ModProtectionStop"
+ModProtectionStop.Parent = ModProtectionMenuFrame
+ModProtectionStop.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+ModProtectionStop.Position = UDim2.new(0.569639325, 0, 0.4733482, 0)
+ModProtectionStop.Size = UDim2.new(0, 89, 0, 28)
+ModProtectionStop.Font = Enum.Font.PatrickHand
+ModProtectionStop.Text = "Disable"
+ModProtectionStop.TextColor3 = Color3.fromRGB(0, 0, 0)
+ModProtectionStop.TextScaled = true
+ModProtectionStop.TextSize = 14.000
+ModProtectionStop.TextWrapped = true
+
+--BuiltInExecutorMenuButton
+BuiltInExecutorPage2Button.Name = "BuiltInExecutorPage2Button"
+BuiltInExecutorPage2Button.Parent = Page2Frame
+BuiltInExecutorPage2Button.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+BuiltInExecutorPage2Button.Position = UDim2.new(0.189897537, 0, 0.123568811, 0)
+BuiltInExecutorPage2Button.Size = UDim2.new(0, 87, 0, 30)
+BuiltInExecutorPage2Button.Font = Enum.Font.PatrickHand
+BuiltInExecutorPage2Button.Text = "Executor"
+BuiltInExecutorPage2Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+BuiltInExecutorPage2Button.TextScaled = true
+BuiltInExecutorPage2Button.TextSize = 14.000
+BuiltInExecutorPage2Button.TextWrapped = true
+
+--BuiltInExecutorMenuFrame
+local ProTipStringTable = {"Alvin needs to stop running RC cars into trees and breaking them","Ask MRG550 why he married his Dad","Tell MRG550 that him and Nora would be great together","Grapple needs to grow up and quit Fortnite. Like seriously, who still plays that?","BE ON THE LOOKOUT FOR TRIIPY, LAST SEEN IN INDIA","Travvy Patty is gonna start to pull people out of cars because of his terrible farming job","The value of doggy just sky rocketed to 1,000,000%! Thats more than a leviathan! :O","Tophat value skyrocketed! (NOT CLICKBAIT) (COPS CALLED) (GONE WRONG) (ALMOST DIED)","Boosts aren't required to get secrets, got a king kitty with NO boosts! :D"}
+local ProTipRandomString = math.random(1, 9)
+BuiltInExecutorFrame.Name = "BuiltInExecutorFrame"
+BuiltInExecutorFrame.Parent = ScreenGui
+BuiltInExecutorFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+BuiltInExecutorFrame.BorderColor3 = Color3.fromRGB(31, 31, 31)
+BuiltInExecutorFrame.BorderSizePixel = 2
+BuiltInExecutorFrame.Position = UDim2.new(0.264460564, 115, 0.279420495, 58)
+BuiltInExecutorFrame.Size = UDim2.new(0, 624, 0, 358)
+
+BuiltInExecutorSourceFrame.Name = "BuiltInExecutorSourceFrame"
+BuiltInExecutorSourceFrame.Parent = BuiltInExecutorFrame
+BuiltInExecutorSourceFrame.Active = true
+BuiltInExecutorSourceFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+BuiltInExecutorSourceFrame.BorderColor3 = Color3.fromRGB(26, 26, 26)
+BuiltInExecutorSourceFrame.BorderSizePixel = 3
+BuiltInExecutorSourceFrame.Position = UDim2.new(0.0199999679, 0, 0.0970791876, 0)
+BuiltInExecutorSourceFrame.Size = UDim2.new(0, 598, 0, 270)
+
+BuiltInExecutorSourceFrameTextBox.Name = "BuiltInExecutorSourceFrameTextBox"
+BuiltInExecutorSourceFrameTextBox.Parent = BuiltInExecutorSourceFrame
+BuiltInExecutorSourceFrameTextBox.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+BuiltInExecutorSourceFrameTextBox.BorderSizePixel = 0
+BuiltInExecutorSourceFrameTextBox.Size = UDim2.new(0, 590, 0, 1744)
+BuiltInExecutorSourceFrameTextBox.ClearTextOnFocus = false
+BuiltInExecutorSourceFrameTextBox.Font = Enum.Font.Code
+BuiltInExecutorSourceFrameTextBox.MultiLine = true
+BuiltInExecutorSourceFrameTextBox.PlaceholderText = "--Put your stupid script here"
+BuiltInExecutorSourceFrameTextBox.Text = ("Thank you for using CLAPPER | Made by... Well you don't need to know <3                                                         Pro Tip: " .. ProTipStringTable[ProTipRandomString])
+BuiltInExecutorSourceFrameTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+BuiltInExecutorSourceFrameTextBox.TextSize = 18.000
+BuiltInExecutorSourceFrameTextBox.TextWrapped = true
+BuiltInExecutorSourceFrameTextBox.TextXAlignment = Enum.TextXAlignment.Left
+BuiltInExecutorSourceFrameTextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+BuiltInExecutorExecuteButton.Name = "BuiltInExecutorExecuteButton"
+BuiltInExecutorExecuteButton.Parent = BuiltInExecutorFrame
+BuiltInExecutorExecuteButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+BuiltInExecutorExecuteButton.BorderSizePixel = 0
+BuiltInExecutorExecuteButton.Position = UDim2.new(0.0192307699, 0, 0.881985486, 0)
+BuiltInExecutorExecuteButton.Size = UDim2.new(0, 287, 0, 33)
+BuiltInExecutorExecuteButton.Font = Enum.Font.Gotham
+BuiltInExecutorExecuteButton.Text = "Execute"
+BuiltInExecutorExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BuiltInExecutorExecuteButton.TextSize = 20.000
+
+BuiltInExecutorExecuteButtonUICorner.CornerRadius = UDim.new(0, 15)
+BuiltInExecutorExecuteButtonUICorner.Name = "BuiltInExecutorExecuteButtonUICorner"
+BuiltInExecutorExecuteButtonUICorner.Parent = BuiltInExecutorExecuteButton
+
+BuiltInExecutorClearButton.Name = "BuiltInExecutorClearButton"
+BuiltInExecutorClearButton.Parent = BuiltInExecutorFrame
+BuiltInExecutorClearButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+BuiltInExecutorClearButton.BorderSizePixel = 0
+BuiltInExecutorClearButton.Position = UDim2.new(0.524038434, 0, 0.881985486, 0)
+BuiltInExecutorClearButton.Size = UDim2.new(0, 287, 0, 33)
+BuiltInExecutorClearButton.Font = Enum.Font.Gotham
+BuiltInExecutorClearButton.Text = "Clear"
+BuiltInExecutorClearButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BuiltInExecutorClearButton.TextSize = 20.000
+
+BuiltInExecutorClearButtonUICorner.CornerRadius = UDim.new(0, 15)
+BuiltInExecutorClearButtonUICorner.Name = "BuiltInExecutorClearButtonUICorner"
+BuiltInExecutorClearButtonUICorner.Parent = BuiltInExecutorClearButton
+
+BuiltInExecutorCloseButton.Name = "BuiltInExecutorCloseButton"
+BuiltInExecutorCloseButton.Parent = BuiltInExecutorFrame
+BuiltInExecutorCloseButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+BuiltInExecutorCloseButton.BorderSizePixel = 0
+BuiltInExecutorCloseButton.Position = UDim2.new(0.915064096, 0, 0.0183475856, 0)
+BuiltInExecutorCloseButton.Size = UDim2.new(0, 39, 0, 20)
+BuiltInExecutorCloseButton.Font = Enum.Font.Gotham
+BuiltInExecutorCloseButton.Text = "X"
+BuiltInExecutorCloseButton.TextColor3 = Color3.fromRGB(255, 66, 69)
+BuiltInExecutorCloseButton.TextSize = 20.000
+
+BuiltInExecutorCloseButtonUICorner.CornerRadius = UDim.new(0, 15)
+BuiltInExecutorCloseButtonUICorner.Name = "BuiltInExecutorCloseButtonUICorner"
+BuiltInExecutorCloseButtonUICorner.Parent = BuiltInExecutorCloseButton
+
+BuiltInExecutorTitle.Name = "BuiltInExecutorTitle"
+BuiltInExecutorTitle.Parent = BuiltInExecutorFrame
+BuiltInExecutorTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BuiltInExecutorTitle.BackgroundTransparency = 1.000
+BuiltInExecutorTitle.BorderSizePixel = 0
+BuiltInExecutorTitle.Position = UDim2.new(0.0176282059, 0, 0, 0)
+BuiltInExecutorTitle.Size = UDim2.new(0, 337, 0, 28)
+BuiltInExecutorTitle.Font = Enum.Font.Gotham
+BuiltInExecutorTitle.Text = "CLAPPER - Script Execution Panel"
+BuiltInExecutorTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+BuiltInExecutorTitle.TextScaled = true
+BuiltInExecutorTitle.TextSize = 30.000
+BuiltInExecutorTitle.TextWrapped = true
+
+BuiltInExecutorVersion.Name = "BuiltInExecutorVersion"
+BuiltInExecutorVersion.Parent = BuiltInExecutorFrame
+BuiltInExecutorVersion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BuiltInExecutorVersion.BackgroundTransparency = 1.000
+BuiltInExecutorVersion.BorderSizePixel = 0
+BuiltInExecutorVersion.Position = UDim2.new(0.567307711, 0, 0.0071743587, 0)
+BuiltInExecutorVersion.Size = UDim2.new(0, 201, 0, 27)
+BuiltInExecutorVersion.Font = Enum.Font.Gotham
+BuiltInExecutorVersion.Text = "Detecting players GUI Version..."
+BuiltInExecutorVersion.TextColor3 = Color3.fromRGB(0, 230, 255)
+BuiltInExecutorVersion.TextScaled = true
+BuiltInExecutorVersion.TextSize = 18.000
+BuiltInExecutorVersion.TextWrapped = true
+
+--ExecutorVersionTextCheck
+local BuyService = game:GetService("MarketplaceService")
+if game.Players.LocalPlayer.UserId == 145591207 or BuyService:UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 15441398) == true then
+	wait(3)
+	BuiltInExecutorVersion.Text = ("VIP Version")
+	BuiltInExecutorVersion.TextColor3 = Color3.fromRGB(251, 255, 0)
+else
+	if game.Players.LocalPlayer.UserId == 421019467 or game.Players.LocalPlayer.UserId == 2220541483 then
+		wait(3)
+		BuiltInExecutorVersion.Text = ("Friend VIP Version")
+		BuiltInExecutorVersion.TextColor3 = Color3.fromRGB(0, 255, 0)
+	end
+end
+
+--AutoClaimMenuButton
+ClaimRewardsAutomaticallyPage2Button.Name = "ClaimRewardsAutomaticallyPage2Button"
+ClaimRewardsAutomaticallyPage2Button.Parent = Page2Frame
+ClaimRewardsAutomaticallyPage2Button.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+ClaimRewardsAutomaticallyPage2Button.Position = UDim2.new(0.324845642, 0, 0.123568811, 0)
+ClaimRewardsAutomaticallyPage2Button.Size = UDim2.new(0, 87, 0, 30)
+ClaimRewardsAutomaticallyPage2Button.Font = Enum.Font.PatrickHand
+ClaimRewardsAutomaticallyPage2Button.Text = "Claim Rewards Automatically"
+ClaimRewardsAutomaticallyPage2Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsAutomaticallyPage2Button.TextScaled = true
+ClaimRewardsAutomaticallyPage2Button.TextSize = 14.000
+ClaimRewardsAutomaticallyPage2Button.TextWrapped = true
+
+--AutoClaimMenu
+ClaimRewardsAutomaticallyFrame.Name = "ClaimRewardsAutomaticallyFrame"
+ClaimRewardsAutomaticallyFrame.Parent = ScreenGui
+ClaimRewardsAutomaticallyFrame.Active = true
+ClaimRewardsAutomaticallyFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsAutomaticallyFrame.Position = UDim2.new(0.219649151, 0, 0.16902183, 0)
+ClaimRewardsAutomaticallyFrame.Size = UDim2.new(0, 867, 0, 437)
+
+ClaimRewardsAutomaticallyTitle.Name = "ClaimRewardsAutomaticallyTitle"
+ClaimRewardsAutomaticallyTitle.Parent = ClaimRewardsAutomaticallyFrame
+ClaimRewardsAutomaticallyTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+ClaimRewardsAutomaticallyTitle.Position = UDim2.new(0, 0, -0.000663809711, 0)
+ClaimRewardsAutomaticallyTitle.Size = UDim2.new(0, 833, 0, 29)
+ClaimRewardsAutomaticallyTitle.Font = Enum.Font.PatrickHand
+ClaimRewardsAutomaticallyTitle.Text = "Claim Rewards Automatically"
+ClaimRewardsAutomaticallyTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsAutomaticallyTitle.TextScaled = true
+ClaimRewardsAutomaticallyTitle.TextSize = 14.000
+ClaimRewardsAutomaticallyTitle.TextWrapped = true
+
+TeleportToMerchantButton.Name = "TeleportToMerchantButton"
+TeleportToMerchantButton.Parent = ClaimRewardsAutomaticallyFrame
+TeleportToMerchantButton.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+TeleportToMerchantButton.Position = UDim2.new(0.0618698671, 0, 0.123568811, 0)
+TeleportToMerchantButton.Size = UDim2.new(0, 87, 0, 30)
+TeleportToMerchantButton.Font = Enum.Font.PatrickHand
+TeleportToMerchantButton.Text = "Teleport to Merchant"
+TeleportToMerchantButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToMerchantButton.TextScaled = true
+TeleportToMerchantButton.TextSize = 14.000
+TeleportToMerchantButton.TextWrapped = true
+
+CloseClaimRewardsAutomaticallyMenu.Name = "CloseClaimRewardsAutomaticallyMenu"
+CloseClaimRewardsAutomaticallyMenu.Parent = ClaimRewardsAutomaticallyFrame
+CloseClaimRewardsAutomaticallyMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CloseClaimRewardsAutomaticallyMenu.Position = UDim2.new(0.961847007, 0, -0.00162085984, 0)
+CloseClaimRewardsAutomaticallyMenu.Size = UDim2.new(0, 33, 0, 28)
+CloseClaimRewardsAutomaticallyMenu.Font = Enum.Font.PatrickHand
+CloseClaimRewardsAutomaticallyMenu.Text = "X"
+CloseClaimRewardsAutomaticallyMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseClaimRewardsAutomaticallyMenu.TextScaled = true
+CloseClaimRewardsAutomaticallyMenu.TextSize = 14.000
+CloseClaimRewardsAutomaticallyMenu.TextWrapped = true
+
+ClaimRewardsTeleportToClaimRewardsButton.Name = "ClaimRewardsTeleportToClaimRewardsButton"
+ClaimRewardsTeleportToClaimRewardsButton.Parent = ClaimRewardsAutomaticallyFrame
+ClaimRewardsTeleportToClaimRewardsButton.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+ClaimRewardsTeleportToClaimRewardsButton.Position = UDim2.new(0.189897537, 0, 0.123568811, 0)
+ClaimRewardsTeleportToClaimRewardsButton.Size = UDim2.new(0, 87, 0, 30)
+ClaimRewardsTeleportToClaimRewardsButton.Font = Enum.Font.PatrickHand
+ClaimRewardsTeleportToClaimRewardsButton.Text = "Teleport to Daily Rewards"
+ClaimRewardsTeleportToClaimRewardsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsTeleportToClaimRewardsButton.TextScaled = true
+ClaimRewardsTeleportToClaimRewardsButton.TextSize = 14.000
+ClaimRewardsTeleportToClaimRewardsButton.TextWrapped = true
+
+TeleportToSpinTheWheel.Name = "TeleportToSpinTheWheel"
+TeleportToSpinTheWheel.Parent = ClaimRewardsAutomaticallyFrame
+TeleportToSpinTheWheel.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+TeleportToSpinTheWheel.Position = UDim2.new(0.324845642, 0, 0.123568811, 0)
+TeleportToSpinTheWheel.Size = UDim2.new(0, 87, 0, 30)
+TeleportToSpinTheWheel.Font = Enum.Font.PatrickHand
+TeleportToSpinTheWheel.Text = "Teleport to Spin the Wheel"
+TeleportToSpinTheWheel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToSpinTheWheel.TextScaled = true
+TeleportToSpinTheWheel.TextSize = 14.000
+TeleportToSpinTheWheel.TextWrapped = true
+
+BuyMerchantItem2Button.Name = "BuyMerchantItem2Button"
+BuyMerchantItem2Button.Parent = ClaimRewardsAutomaticallyFrame
+BuyMerchantItem2Button.BackgroundColor3 = Color3.fromRGB(0, 243, 255)
+BuyMerchantItem2Button.Position = UDim2.new(0.0618698671, 0, 0.398168325, 0)
+BuyMerchantItem2Button.Size = UDim2.new(0, 87, 0, 30)
+BuyMerchantItem2Button.Font = Enum.Font.PatrickHand
+BuyMerchantItem2Button.Text = "Buy Merchant Item 2"
+BuyMerchantItem2Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+BuyMerchantItem2Button.TextScaled = true
+BuyMerchantItem2Button.TextSize = 14.000
+BuyMerchantItem2Button.TextWrapped = true
+
+BuyMerchantItem1Button.Name = "BuyMerchantItem1Button"
+BuyMerchantItem1Button.Parent = ClaimRewardsAutomaticallyFrame
+BuyMerchantItem1Button.BackgroundColor3 = Color3.fromRGB(0, 243, 255)
+BuyMerchantItem1Button.Position = UDim2.new(0.0618698671, 0, 0.265445232, 0)
+BuyMerchantItem1Button.Size = UDim2.new(0, 87, 0, 30)
+BuyMerchantItem1Button.Font = Enum.Font.PatrickHand
+BuyMerchantItem1Button.Text = "Buy Merchant Item 1"
+BuyMerchantItem1Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+BuyMerchantItem1Button.TextScaled = true
+BuyMerchantItem1Button.TextSize = 14.000
+BuyMerchantItem1Button.TextWrapped = true
+
+BuyMerchantItem3Button.Name = "BuyMerchantItem3Button"
+BuyMerchantItem3Button.Parent = ClaimRewardsAutomaticallyFrame
+BuyMerchantItem3Button.BackgroundColor3 = Color3.fromRGB(0, 243, 255)
+BuyMerchantItem3Button.Position = UDim2.new(0.0618698671, 0, 0.551486373, 0)
+BuyMerchantItem3Button.Size = UDim2.new(0, 87, 0, 30)
+BuyMerchantItem3Button.Font = Enum.Font.PatrickHand
+BuyMerchantItem3Button.Text = "Buy Merchant Item 3"
+BuyMerchantItem3Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+BuyMerchantItem3Button.TextScaled = true
+BuyMerchantItem3Button.TextSize = 14.000
+BuyMerchantItem3Button.TextWrapped = true
+
+ClaimRewardsClaimReward.Name = "ClaimRewardsClaimReward"
+ClaimRewardsClaimReward.Parent = ClaimRewardsAutomaticallyFrame
+ClaimRewardsClaimReward.BackgroundColor3 = Color3.fromRGB(0, 243, 255)
+ClaimRewardsClaimReward.Position = UDim2.new(0.189897537, 0, 0.265445232, 0)
+ClaimRewardsClaimReward.Size = UDim2.new(0, 87, 0, 30)
+ClaimRewardsClaimReward.Font = Enum.Font.PatrickHand
+ClaimRewardsClaimReward.Text = "Claim Daily Reward"
+ClaimRewardsClaimReward.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsClaimReward.TextScaled = true
+ClaimRewardsClaimReward.TextSize = 14.000
+ClaimRewardsClaimReward.TextWrapped = true
+
+ClaimRewardsEnableAutoClaimReward.Name = "ClaimRewardsEnableAutoClaimReward"
+ClaimRewardsEnableAutoClaimReward.Parent = ClaimRewardsAutomaticallyFrame
+ClaimRewardsEnableAutoClaimReward.BackgroundColor3 = Color3.fromRGB(0, 243, 255)
+ClaimRewardsEnableAutoClaimReward.Position = UDim2.new(0.189897537, 0, 0.398168325, 0)
+ClaimRewardsEnableAutoClaimReward.Size = UDim2.new(0, 87, 0, 30)
+ClaimRewardsEnableAutoClaimReward.Font = Enum.Font.PatrickHand
+ClaimRewardsEnableAutoClaimReward.Text = "Enable Auto Claim Daily Reward"
+ClaimRewardsEnableAutoClaimReward.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsEnableAutoClaimReward.TextScaled = true
+ClaimRewardsEnableAutoClaimReward.TextSize = 14.000
+ClaimRewardsEnableAutoClaimReward.TextWrapped = true
+
+TeleporttoShardRewards.Name = "TeleporttoShardRewards"
+TeleporttoShardRewards.Parent = ClaimRewardsAutomaticallyFrame
+TeleporttoShardRewards.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+TeleporttoShardRewards.Position = UDim2.new(0.688167453, 0, 0.123568811, 0)
+TeleporttoShardRewards.Size = UDim2.new(0, 87, 0, 30)
+TeleporttoShardRewards.Font = Enum.Font.PatrickHand
+TeleporttoShardRewards.Text = "Teleport to Shard Rewards"
+TeleporttoShardRewards.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleporttoShardRewards.TextScaled = true
+TeleporttoShardRewards.TextSize = 14.000
+TeleporttoShardRewards.TextWrapped = true
+
+ClaimRewardsDisableAutoClaimReward.Name = "ClaimRewardsDisableAutoClaimReward"
+ClaimRewardsDisableAutoClaimReward.Parent = ClaimRewardsAutomaticallyFrame
+ClaimRewardsDisableAutoClaimReward.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+ClaimRewardsDisableAutoClaimReward.Position = UDim2.new(0.189897537, 0, 0.549198091, 0)
+ClaimRewardsDisableAutoClaimReward.Size = UDim2.new(0, 87, 0, 30)
+ClaimRewardsDisableAutoClaimReward.Font = Enum.Font.PatrickHand
+ClaimRewardsDisableAutoClaimReward.Text = "Disable Auto Claim Daily Reward"
+ClaimRewardsDisableAutoClaimReward.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimRewardsDisableAutoClaimReward.TextScaled = true
+ClaimRewardsDisableAutoClaimReward.TextSize = 14.000
+ClaimRewardsDisableAutoClaimReward.TextWrapped = true
+
+SpinTheWheel.Name = "SpinTheWheel"
+SpinTheWheel.Parent = ClaimRewardsAutomaticallyFrame
+SpinTheWheel.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+SpinTheWheel.Position = UDim2.new(0.324845642, 0, 0.265445232, 0)
+SpinTheWheel.Size = UDim2.new(0, 87, 0, 30)
+SpinTheWheel.Font = Enum.Font.PatrickHand
+SpinTheWheel.Text = "Spin the Wheel"
+SpinTheWheel.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpinTheWheel.TextScaled = true
+SpinTheWheel.TextSize = 14.000
+SpinTheWheel.TextWrapped = true
+
+AutomaticallySpinTheWheelEnable.Name = "AutomaticallySpinTheWheelEnable"
+AutomaticallySpinTheWheelEnable.Parent = ClaimRewardsAutomaticallyFrame
+AutomaticallySpinTheWheelEnable.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+AutomaticallySpinTheWheelEnable.Position = UDim2.new(0.324845642, 0, 0.398168325, 0)
+AutomaticallySpinTheWheelEnable.Size = UDim2.new(0, 87, 0, 30)
+AutomaticallySpinTheWheelEnable.Font = Enum.Font.PatrickHand
+AutomaticallySpinTheWheelEnable.Text = "Enable Auto Spin the Wheel"
+AutomaticallySpinTheWheelEnable.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutomaticallySpinTheWheelEnable.TextScaled = true
+AutomaticallySpinTheWheelEnable.TextSize = 14.000
+AutomaticallySpinTheWheelEnable.TextWrapped = true
+
+SetShardAutoDifficultyAutoAssign.Name = "SetShardAutoDifficultyAutoAssign"
+SetShardAutoDifficultyAutoAssign.Parent = ClaimRewardsAutomaticallyFrame
+SetShardAutoDifficultyAutoAssign.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+SetShardAutoDifficultyAutoAssign.Position = UDim2.new(0.648951769, 0, 0.365534812, 0)
+SetShardAutoDifficultyAutoAssign.Size = UDim2.new(0, 155, 0, 44)
+SetShardAutoDifficultyAutoAssign.Font = Enum.Font.PatrickHand
+SetShardAutoDifficultyAutoAssign.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+SetShardAutoDifficultyAutoAssign.PlaceholderText = "Enter Reward to Auto-Assign (Easy, Medium, Hard)"
+SetShardAutoDifficultyAutoAssign.Text = ""
+SetShardAutoDifficultyAutoAssign.TextColor3 = Color3.fromRGB(0, 0, 0)
+SetShardAutoDifficultyAutoAssign.TextScaled = true
+SetShardAutoDifficultyAutoAssign.TextSize = 14.000
+SetShardAutoDifficultyAutoAssign.TextWrapped = true
+
+SpinTheWheelAutoEnableWarning.Name = "SpinTheWheelAutoEnableWarning"
+SpinTheWheelAutoEnableWarning.Parent = ClaimRewardsAutomaticallyFrame
+SpinTheWheelAutoEnableWarning.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+SpinTheWheelAutoEnableWarning.BackgroundTransparency = 1.000
+SpinTheWheelAutoEnableWarning.Position = UDim2.new(0.324106127, 0, 0.349450558, 0)
+SpinTheWheelAutoEnableWarning.Rotation = 7.000
+SpinTheWheelAutoEnableWarning.Size = UDim2.new(0, 189, 0, 29)
+SpinTheWheelAutoEnableWarning.Font = Enum.Font.Ubuntu
+SpinTheWheelAutoEnableWarning.Text = "NOT RECOMMENDED!!!"
+SpinTheWheelAutoEnableWarning.TextColor3 = Color3.fromRGB(255, 0, 4)
+SpinTheWheelAutoEnableWarning.TextScaled = true
+SpinTheWheelAutoEnableWarning.TextSize = 14.000
+SpinTheWheelAutoEnableWarning.TextWrapped = true
+
+AutomaticallySpinTheWheelDisable.Name = "AutomaticallySpinTheWheelDisable"
+AutomaticallySpinTheWheelDisable.Parent = ClaimRewardsAutomaticallyFrame
+AutomaticallySpinTheWheelDisable.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+AutomaticallySpinTheWheelDisable.Position = UDim2.new(0.324845612, 0, 0.549198091, 0)
+AutomaticallySpinTheWheelDisable.Size = UDim2.new(0, 87, 0, 30)
+AutomaticallySpinTheWheelDisable.Font = Enum.Font.PatrickHand
+AutomaticallySpinTheWheelDisable.Text = "Disable Auto Spin the Wheel"
+AutomaticallySpinTheWheelDisable.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutomaticallySpinTheWheelDisable.TextScaled = true
+AutomaticallySpinTheWheelDisable.TextSize = 14.000
+AutomaticallySpinTheWheelDisable.TextWrapped = true
+
+TeleporttoShardShop.Name = "TeleporttoShardShop"
+TeleporttoShardShop.Parent = ClaimRewardsAutomaticallyFrame
+TeleporttoShardShop.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+TeleporttoShardShop.Position = UDim2.new(0.557832956, 0, 0.123568811, 0)
+TeleporttoShardShop.Size = UDim2.new(0, 87, 0, 30)
+TeleporttoShardShop.Font = Enum.Font.PatrickHand
+TeleporttoShardShop.Text = "Teleport to Shard Shop"
+TeleporttoShardShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleporttoShardShop.TextScaled = true
+TeleporttoShardShop.TextSize = 14.000
+TeleporttoShardShop.TextWrapped = true
+
+TeleporttoBrewPotionRoom.Name = "TeleporttoBrewPotionRoom"
+TeleporttoBrewPotionRoom.Parent = ClaimRewardsAutomaticallyFrame
+TeleporttoBrewPotionRoom.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+TeleporttoBrewPotionRoom.Position = UDim2.new(0.860024452, 0, 0.123568811, 0)
+TeleporttoBrewPotionRoom.Size = UDim2.new(0, 87, 0, 30)
+TeleporttoBrewPotionRoom.Font = Enum.Font.PatrickHand
+TeleporttoBrewPotionRoom.Text = "Teleport to Potion Brew Room"
+TeleporttoBrewPotionRoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleporttoBrewPotionRoom.TextScaled = true
+TeleporttoBrewPotionRoom.TextSize = 14.000
+TeleporttoBrewPotionRoom.TextWrapped = true
+
+ClaimShardRewards.Name = "ClaimShardRewards"
+ClaimShardRewards.Parent = ClaimRewardsAutomaticallyFrame
+ClaimShardRewards.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+ClaimShardRewards.Position = UDim2.new(0.688167453, 0, 0.247138605, 0)
+ClaimShardRewards.Size = UDim2.new(0, 87, 0, 30)
+ClaimShardRewards.Font = Enum.Font.PatrickHand
+ClaimShardRewards.Text = "Claim Shard Rewards"
+ClaimShardRewards.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClaimShardRewards.TextScaled = true
+ClaimShardRewards.TextSize = 14.000
+ClaimShardRewards.TextWrapped = true
+
+EnableAutoClaimShardRewards.Name = "EnableAutoClaimShardRewards"
+EnableAutoClaimShardRewards.Parent = ClaimRewardsAutomaticallyFrame
+EnableAutoClaimShardRewards.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+EnableAutoClaimShardRewards.Position = UDim2.new(0.688167453, 0, 0.503431499, 0)
+EnableAutoClaimShardRewards.Size = UDim2.new(0, 87, 0, 30)
+EnableAutoClaimShardRewards.Font = Enum.Font.PatrickHand
+EnableAutoClaimShardRewards.Text = "Enable Auto Claim Shard Rewards"
+EnableAutoClaimShardRewards.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnableAutoClaimShardRewards.TextScaled = true
+EnableAutoClaimShardRewards.TextSize = 14.000
+EnableAutoClaimShardRewards.TextWrapped = true
+
+DisableAutoClaimShardRewards.Name = "DisableAutoClaimShardRewards"
+DisableAutoClaimShardRewards.Parent = ClaimRewardsAutomaticallyFrame
+DisableAutoClaimShardRewards.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+DisableAutoClaimShardRewards.Position = UDim2.new(0.688167453, 0, 0.654461265, 0)
+DisableAutoClaimShardRewards.Size = UDim2.new(0, 87, 0, 30)
+DisableAutoClaimShardRewards.Font = Enum.Font.PatrickHand
+DisableAutoClaimShardRewards.Text = "Disable Auto Claim Shard Rewards"
+DisableAutoClaimShardRewards.TextColor3 = Color3.fromRGB(0, 0, 0)
+DisableAutoClaimShardRewards.TextScaled = true
+DisableAutoClaimShardRewards.TextSize = 14.000
+DisableAutoClaimShardRewards.TextWrapped = true
+
+
+
+UserTimeName.Name = "UserTimeName"
+UserTimeName.Parent = UserTimeFrame
+UserTimeName.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+UserTimeName.Position = UDim2.new(0, 0, -0.000663827988, 0)
+UserTimeName.Size = UDim2.new(0, 288, 0, 29)
+UserTimeName.Font = Enum.Font.PatrickHand
+UserTimeName.Text = "Waiting for time..."
+UserTimeName.TextColor3 = Color3.fromRGB(0, 0, 0)
+UserTimeName.TextScaled = true
+UserTimeName.TextSize = 14.000
+UserTimeName.TextWrapped = true
+
+
+CloseTimeMenu.Name = "CloseTimeMenu"
+CloseTimeMenu.Parent = UserTimeFrame
+CloseTimeMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CloseTimeMenu.Position = UDim2.new(0.885184824, 0, 0.824954391, 0)
+CloseTimeMenu.Size = UDim2.new(0, 33, 0, 28)
+CloseTimeMenu.Font = Enum.Font.PatrickHand
+CloseTimeMenu.Text = "X"
+CloseTimeMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseTimeMenu.TextScaled = true
+CloseTimeMenu.TextSize = 14.000
+CloseTimeMenu.TextWrapped = true
+
+OpenTimeMenu.Name = "OpenTimeMenu"
+OpenTimeMenu.Parent = ScreenGui
+OpenTimeMenu.BackgroundColor3 = Color3.fromRGB(0, 255, 51)
+OpenTimeMenu.Position = UDim2.new(0.92, 0, 0.344, 0)
+OpenTimeMenu.Size = UDim2.new(0, 81, 0, 22)
+OpenTimeMenu.Font = Enum.Font.PatrickHand
+OpenTimeMenu.Text = "OPEN TIME INFO"
+OpenTimeMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenTimeMenu.TextScaled = true
+OpenTimeMenu.TextSize = 14.000
+OpenTimeMenu.TextWrapped = true
+
+UserTimeDate.Name = "UserTimeDate"
+UserTimeDate.Parent = UserTimeFrame
+UserTimeDate.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+UserTimeDate.BackgroundTransparency = 1.000
+UserTimeDate.Position = UDim2.new(-0.00347222225, 0, 0.240076885, 0)
+UserTimeDate.Size = UDim2.new(0, 288, 0, 37)
+UserTimeDate.Font = Enum.Font.PatrickHand
+UserTimeDate.Text = "Today is %A, %B %d, %Y."
+UserTimeDate.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserTimeDate.TextScaled = true
+UserTimeDate.TextSize = 14.000
+UserTimeDate.TextWrapped = true
+
+UserTimeTime.Name = "UserTimeTime"
+UserTimeTime.Parent = UserTimeFrame
+UserTimeTime.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+UserTimeTime.BackgroundTransparency = 1.000
+UserTimeTime.Position = UDim2.new(-0.00347222225, 0, 0.468471944, 0)
+UserTimeTime.Size = UDim2.new(0, 288, 0, 37)
+UserTimeTime.Font = Enum.Font.PatrickHand
+UserTimeTime.Text = "It's currently %I:%M:%S %p, %Z"
+UserTimeTime.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserTimeTime.TextScaled = true
+UserTimeTime.TextSize = 14.000
+UserTimeTime.TextWrapped = true
+
+UserTimeName.Text = ("Welcome, " .. game.Players.LocalPlayer.Name .. "!")
+
+--Active
+UltraCounterFrame.Active = true
+CloseUltraCounter.Active = true
+CounterEggName.Active = true
+CounterEggCost.Active = true
+UltraCounterStart.Active = true
+UltraCounterTitle.Active = false
+UltraCounterMenu.Active = true
+CurrentVersion.Active = false
+ChangelogInformation.Active = true
+ChangelogTitle.Active = false
+ChangelogFrame.Active = true
+ScrollingChangelog.Active = true
+ChangelogMenu.Active = true
+CloseChangelog.Active = true
+BlowBubblesMenu.Active = true
+BlowBubblesFrame.Active = true
+CloseBlowBubbles.Active = true
+BlowBubblesStart.Active = true
+BlowBubblesStop.Active = true
+BlowBubblesTitle.Active = false
+UltraCounterStop.Active = true
+ProtectionsMenu.Active = true
+ProtectionsFrame.Active = true
+CloseProtectionMenu.Active = true
+AntiAFKMenuProtectionButton.Active = true
+ProtectionsMenuTitle.Active = false
+AntiAFKProtectionMenuFrame.Active = true
+AntiAFKStart.Active = true
+CloseAntiAFKMenu.Active = true
+AntiAFKTitle.Active = false
+
+--Color
+ScreenGui.ResetOnSpawn = false
+MainGUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UltraFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseUltra.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+EggName.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CloseMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+OpenMenu.BackgroundColor3 = Color3.fromRGB(0, 255, 51)
+UltraStart.BackgroundColor3 = Color3.fromRGB(0, 255, 51)
+guiname.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+UltraTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+UltraMenu.BackgroundColor3 = Color3.fromRGB(98, 255, 0)
+UltraCounterFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseUltraCounter.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CounterEggName.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+CounterEggCost.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+UltraCounterStart.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+UltraCounterTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+UltraCounterMenu.BackgroundColor3 = Color3.fromRGB(98, 255, 0)
+CurrentVersion.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CurrentVersion.BackgroundTransparency = (1)
+ChangelogMenu.BackgroundColor3 = Color3.fromRGB(98, 255, 0)
+ChangelogFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingChangelog.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogInformation.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogInformation.BackgroundTransparency = (0)
+CloseChangelog.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+ChangelogTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+BlowBubblesMenu.BackgroundColor3 = Color3.fromRGB(98, 255, 0)
+BlowBubblesFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseBlowBubbles.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+BlowBubblesStart.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+BlowBubblesStop.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+BlowBubblesTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+BlowBubblesTitle.BackgroundTransparency = (0)
+UltraCounterStop.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+UltraCounterStop.BackgroundTransparency = (0)
+ProtectionsMenu.BackgroundColor3 = Color3.fromRGB(98, 255, 0)
+ProtectionsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseProtectionMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+AntiAFKMenuProtectionButton.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+ProtectionsMenuTitle.BackgroundTransparency = (0)
+ProtectionsMenuTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+AntiAFKProtectionMenuFrame.BackgroundTransparency = (0)
+AntiAFKTitle.BackgroundTransparency = (0)
+AntiAFKProtectionMenuFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFKStart.BackgroundColor3 = Color3.fromRGB(0, 255, 42)
+CloseAntiAFKMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+AntiAFKTitle.BackgroundColor3 = Color3.fromRGB(5, 113, 255)
+
+
+--Parents
+ScreenGui.Parent = game.CoreGui
+MainGUI.Parent = ScreenGui
+UltraFrame.Parent = ScreenGui
+CloseMenu.Parent = ScreenGui
+CloseUltra.Parent = ScreenGui
+OpenMenu.Parent = ScreenGui
+UltraMenu.Parent = MainGUI
+guiname.Parent = MainGUI
+EggName.Parent = UltraFrame
+UltraStart.Parent = UltraFrame
+UltraTitle.Parent = UltraFrame
+UltraCounterFrame.Parent = ScreenGui
+CloseUltraCounter.Parent = UltraCounterFrame
+CounterEggName.Parent = UltraCounterFrame
+CounterEggCost.Parent = UltraCounterFrame
+UltraCounterStart.Parent = UltraCounterFrame
+UltraCounterTitle.Parent = UltraCounterFrame
+UltraCounterMenu.Parent = MainGUI
+ChangelogMenu.Parent = MainGUI
+CurrentVersion.Parent = MainGUI
+ChangelogFrame.Parent = ScreenGui
+ScrollingChangelog.Parent = ChangelogFrame
+ChangelogInformation.Parent = ScrollingChangelog
+CloseChangelog.Parent = ChangelogFrame
+ChangelogTitle.Parent = ChangelogFrame
+BlowBubblesMenu.Parent = MainGUI
+BlowBubblesFrame.Parent = ScreenGui
+CloseBlowBubbles.Parent = BlowBubblesFrame
+BlowBubblesStart.Parent = BlowBubblesFrame
+BlowBubblesStop.Parent = BlowBubblesFrame
+BlowBubblesTitle.Parent = BlowBubblesFrame
+UltraCounterStop.Parent = UltraCounterFrame
+ProtectionsMenu.Parent = MainGUI
+ProtectionsFrame.Parent = ScreenGui
+CloseProtectionMenu.Parent = ProtectionsFrame
+AntiAFKMenuProtectionButton.Parent = ProtectionsFrame
+ProtectionsMenuTitle.Parent = ProtectionsFrame
+AntiAFKProtectionMenuFrame.Parent = ScreenGui
+AntiAFKStart.Parent = AntiAFKProtectionMenuFrame
+CloseAntiAFKMenu.Parent = AntiAFKProtectionMenuFrame
+AntiAFKTitle.Parent = AntiAFKProtectionMenuFrame
+
+
+--Names
+MainGUI.Name = ("MainGUI")
+UltraFrame.Name = ("UltraFrame")
+CloseMenu.Name = ("CloseMenu")
+CloseUltra.Name = ("CloseUltra")
+OpenMenu.Name = ("OpenMenu")
+UltraMenu.Name = ("UltraMenu")
+guiname.Name = ("guiname")
+EggName.Name = ("EggName")
+UltraStart.Name = ("UltraStart")
+UltraTitle.Name = ("UltraTitle")
+UltraCounterFrame.Name = ("UltraCounterFrame")
+CloseUltraCounter.Name = ("CloseUltraCounter")
+CounterEggName.Name = ("CounterEggName")
+CounterEggCost.Name = ("CounterEggCost")
+UltraCounterStart.Name = ("UltraCounterStart")
+UltraCounterTitle.Name = ("UltraCounterTitle")
+UltraCounterMenu.Name = ("UltraCounterMenu")
+CurrentVersion.Name = ("CurrentVersion")
+ChangelogMenu.Name = ("ChangelogMenu")
+ChangelogFrame.Name = ("ChangelogFrame")
+ScrollingChangelog.Name = ("ScrollingChangelog")
+ChangelogInformation.Name = ("ChangelogInformation")
+CloseChangelog.Name = ("CloseChangelog")
+ChangelogTitle.Name = ("ChangelogTitle")
+BlowBubblesMenu.Name = ("BlowBubblesMenu")
+BlowBubblesFrame.Name = ("BlowBubblesFrame")
+CloseBlowBubbles.Name = ("CloseBlowBubbles")
+BlowBubblesStart.Name = ("BlowBubblesStart")
+BlowBubblesStop.Name = ("BlowBubblesStop")
+BlowBubblesTitle.Name = ("BlowBubblesTitle")
+UltraCounterStop.Name = ("UltraCounterStop")
+ProtectionsMenu.Name = ("ProtectionsMenu")
+ProtectionsFrame.Name = ("ProtectionsFrame")
+CloseProtectionMenu.Name = ("CloseProtectionMenu")
+AntiAFKMenuProtectionButton.Name = ("AntiAFKMenuProtectionButton")
+ProtectionsMenuTitle.Name = ("ProtectionsMenuTitle")
+AntiAFKProtectionMenuFrame.Name = ("AntiAFKProtectionMenuFrame")
+AntiAFKStart.Name = ("AntiAFKStart")
+CloseAntiAFKMenu.Name = ("CloseAntiAFKMenu")
+AntiAFKTitle.Name = ("AntiAFKTitle")
+
+--Text
+
+UltraMenu.Text = ("Ultra Egg Hatch Menu")
+guiname.Text = ("Bubble Gum Simulator GUI")
+EggName.PlaceholderText = ("Enter Egg Name")
+EggName.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+UltraStart.Text = ("Start!")
+UltraTitle.Text = ("Ultra Egg Hatch")
+CloseMenu.Text = ("X")
+CloseUltra.Text = ("X")
+OpenMenu.Text = ("OPEN")
+CloseUltraCounter.Text = ("X")
+CounterEggName.PlaceholderText = ("Enter Egg Name")
+CounterEggName.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+CounterEggCost.PlaceholderText = ("Enter Egg Cost")
+CounterEggCost.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+UltraCounterStart.Text = ("Start!")
+UltraCounterStart.TextColor3 = Color3.fromRGB(0, 0, 0)
+UltraCounterTitle.Text = ("Ultra Counter Egg Hatch")
+UltraCounterTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+UltraCounterMenu.Text = ("Ultra Egg Hatch With Counter Menu")
+UltraCounterMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CurrentVersion.Text = ("Version 2.9.9 [UNSTABLE]")
+CurrentVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogMenu.Text = ("Changelog")
+ChangelogMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogInformation.Text = ("2/6/2021 | - Released a new changelog feature! This marks the start of version 2.0.                       2/6/2021 6:53PM EST | Added a verification feature so only people that are verified by the creator can use the script. If you are not verified, it autokicks the player.        2/9/2021 | - Released a new menu called 'Blow Bubbles'. It will auto blow bubbles for you the whole time without having to click! * This however does not override the normal Roblox game timeout. (Development Scriping Updates) ^ Fixed code being public inside the verification GUI. It is now hidden safely. This will help avoid people bypassing the auto-kick for no whitelist. (Development Plans) & We plan to add features such as the ability for protections that auto kick you when moderators of BGS join your game. And we also plan to add auto-claim features. 2/13/2021 // Version 2.9.1 | - Due to a fair amount of requests, I have added a stop auto hatch to the counter version! When you click it, it halts the script and your ping will slowly drop and you will stop opening eggs. For low end computers, rejoins may be required after stopping.                      2/14/2021 // Version 2.9.2 | - Fixed a issue where the client would get kicked for unexpected behavior when using the ultra egg hatch feature for too long. We have also found out there is a 2.68 second delay between opening the eggs and firing, and it accepts fires after 2.68 seconds of the last remote fired. This is in testing right now, and will be announced if it is a valid fix or not on 2/15/2021 in either the morning or afternoon. Once tested, if it worked you will see the version return to 'Version 2.9.2'. If this fix didn't work, it will say for the version '2.9.2 [UNSTABLE]'.                      2/16/2021 // Version 2.9.3 | -Added a protections menu. - Added a feature that makes it so you do not get kicked for being AFK. This can be found in the protections menu, and we will probably be adding lots of protections, which is why the window is so big. We also plan to make another window for in-game features that is also bigger as well. Due to this, the main GUI size may change soon.                                                          3/6/2021 // Version 2.9.4 | -Made all of the frames draggable as per user request! * Working on a feature that will allow you to see the time and date, and soon server uptime. I cannot release it right now as it doesn't work. - Made the menu payed. It is currently $20 for lifetime VIP access, however that is temporary and will have a new price once standard & essential are done.           3/11/2021 // Version 2.9.5 | -Made a streamer mode feature! This will change everyones name and remove your BGS stats. This is helpful to be sure you can't be detected when exploiting and streaming. This could even be used to blame people for things.                3/13/2021 // Version 2.9.9 | -Added mod protection! It will auto kick you if a mod joins your current game. Due to how severe it is if a bug occurs with this feature, please report any bugs ASAP. -Added a built-in executor! You can now execute scripts in game and prevent being tracked by your own executor! -Added it so you can auto-claim the travelling merchant, daily reward, spin the wheel, shard shop, and brew potions! - Added a admin command bar! You can now execute commands without having to open the menu needed to run it! 5/2/2021 // Development Update | -We have now moved our project to our GitHub project due to us needing to edit scripts together, especially for the in-game value list script that we are making soon.")
+ChangelogInformation.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseChangelog.Text = ("X")
+CloseChangelog.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogTitle.Text = ("Changelog")
+ChangelogTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogInformation.TextWrapped = true
+BlowBubblesMenu.Text = ("Blow Bubbles Automatically")
+BlowBubblesMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseBlowBubbles.Text = ("X")
+CloseBlowBubbles.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlowBubblesStart.Text = ("Start!")
+BlowBubblesStart.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlowBubblesStop.Text = ("Stop!")
+BlowBubblesStop.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlowBubblesTitle.Text = ("Blow Bubbles Automatically")
+BlowBubblesTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+UltraCounterStop.Text = ("Stop!")
+UltraCounterStop.TextColor3 = Color3.fromRGB(0, 0, 0)
+ProtectionsMenu.Text = ("Protections Menu")
+ProtectionsMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseProtectionMenu.Text = ("X")
+CloseProtectionMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFKMenuProtectionButton.Text = ("Anti-AFK")
+AntiAFKMenuProtectionButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ProtectionsMenuTitle.Text = ("Protections Menu")
+ProtectionsMenuTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFKStart.Text = ("Start!")
+AntiAFKStart.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseAntiAFKMenu.Text = ("X")
+CloseAntiAFKMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFKTitle.Text = ("Anti-AFK Menu")
+AntiAFKTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+CounterEggName.Text = ("Enter Egg Name")
+CounterEggCost.Text = ("Enter Egg Cost")
+
+--BorderSizePixel
+ChangelogInformation.BorderSizePixel = (0)
+
+--Text Scaled
+
+UltraMenu.TextScaled = true
+guiname.TextScaled = true
+EggName.TextScaled = true
+UltraStart.TextScaled = true
+UltraTitle.TextScaled = true
+CloseMenu.TextScaled = true
+CloseUltra.TextScaled = true
+OpenMenu.TextScaled = true
+CloseUltraCounter.TextScaled = true
+CounterEggName.TextScaled = true
+CounterEggCost.TextScaled = true
+UltraCounterStart.TextScaled = true
+UltraCounterTitle.TextScaled = true
+UltraCounterMenu.TextScaled = true
+CurrentVersion.TextScaled = true
+ChangelogMenu.TextScaled = true
+ChangelogInformation.TextScaled = false
+ChangelogInformation.TextSize = (20)
+CloseChangelog.TextScaled = true
+ChangelogTitle.TextScaled = true
+BlowBubblesMenu.TextScaled = true
+BlowBubblesStart.TextScaled = true
+BlowBubblesStop.TextScaled = true
+CloseBlowBubbles.TextScaled = true
+BlowBubblesTitle.TextScaled = true
+UltraCounterStop.TextScaled = true
+ProtectionsMenu.TextScaled = true
+CloseProtectionMenu.TextScaled = true
+AntiAFKMenuProtectionButton.TextScaled = true
+ProtectionsMenuTitle.TextScaled = true
+AntiAFKStart.TextScaled = true
+CloseAntiAFKMenu.TextScaled = true
+AntiAFKTitle.TextScaled = true
+
+
+--Font
+
+UltraMenu.Font = ("PatrickHand")
+guiname.Font = ("PatrickHand")
+EggName.Font = ("PatrickHand")
+UltraStart.Font = ("PatrickHand")
+UltraTitle.Font = ("PatrickHand")
+CloseMenu.Font = ("PatrickHand")
+CloseUltra.Font = ("PatrickHand")
+OpenMenu.Font = ("PatrickHand")
+CloseUltraCounter.Font = ("PatrickHand")
+CounterEggName.Font = ("PatrickHand")
+CounterEggCost.Font = ("PatrickHand")
+UltraCounterStart.Font = ("PatrickHand")
+UltraCounterTitle.Font = ("PatrickHand")
+UltraCounterMenu.Font = ("PatrickHand")
+CurrentVersion.Font = ("SpecialElite")
+ChangelogMenu.Font = ("PatrickHand")
+ChangelogInformation.Font = ("SpecialElite")
+CloseChangelog.Font = ("PatrickHand")
+ChangelogTitle.Font = ("PatrickHand")
+BlowBubblesMenu.Font = ("PatrickHand")
+BlowBubblesStart.Font = ("PatrickHand")
+BlowBubblesStop.Font = ("PatrickHand")
+CloseBlowBubbles.Font = ("PatrickHand")
+BlowBubblesTitle.Font = ("PatrickHand")
+UltraCounterStop.Font = ("PatrickHand")
+ProtectionsMenu.Font = ("PatrickHand")
+CloseProtectionMenu.Font = ("PatrickHand")
+AntiAFKMenuProtectionButton.Font = ("PatrickHand")
+ProtectionsMenuTitle.Font = ("PatrickHand")
+AntiAFKStart.Font = ("PatrickHand")
+CloseAntiAFKMenu.Font = ("PatrickHand")
+AntiAFKTitle.Font = ("PatrickHand")
+
+--TextAlignment
+ChangelogInformation.TextXAlignment = ("Left")
+ChangelogInformation.TextYAlignment = ("Top")
+
+--ScrollingFrame
+ScrollingChangelog.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingChangelog.ScrollBarImageTransparency = (0.3)
+ScrollingChangelog.ScrollBarThickness = (13)
+ScrollingChangelog.ScrollingEnabled = true
+ScrollingChangelog.VerticalScrollBarPosition = ("Left")
+ScrollingChangelog.CanvasSize = UDim2.new(0, 0, 6.4, 0)
+
+
+--Position
+MainGUI.Position = UDim2.new(0.012, 0, 0.735, 0)
+UltraFrame.Position = UDim2.new(0.357, 0, 0.411, 0)
+UltraMenu.Position = UDim2.new(0.036, 0, 0.284, 0)
+guiname.Position = UDim2.new(-0.001, 0, 0.009, 0)
+EggName.Position = UDim2.new(0.207, 0, 0.372, 0)
+UltraStart.Position = UDim2.new(0.369, 0, 0.745, 0)
+UltraTitle.Position = UDim2.new(0, 0, -0.001, 0)
+CloseMenu.Position = UDim2.new(0.209, 0, 0.737, 0)
+CloseUltra.Position = UDim2.new(0.599, 0, 0.411, 0)
+OpenMenu.Position = UDim2.new(0.005, 0, 0.379, 0)
+UltraCounterMenu.Position = UDim2.new(0.36, 0, 0.284, 0)
+UltraCounterFrame.Position = UDim2.new(0.306, 0, 0.346, 0)
+CloseUltraCounter.Position = UDim2.new(0.934, 0, -0.004, 0)
+CounterEggName.Position = UDim2.new(0.039, 0, 0.34, 0)
+CounterEggCost.Position = UDim2.new(0.529, 0, 0.34, 0)
+UltraCounterStart.Position = UDim2.new(0.256, 0, 0.725, 0)
+UltraCounterTitle.Position = UDim2.new(0, 0, -0.001, 0)
+CurrentVersion.Position = UDim2.new(0.311, 0, 0.895, 0)
+ChangelogMenu.Position = UDim2.new(0.684, 0, 0.284, 0)
+ChangelogFrame.Position = UDim2.new(0.347, 0, 0.305, 0)
+ScrollingChangelog.Position = UDim2.new(0, 0, 0.112, 0)
+ChangelogInformation.Position = UDim2.new(0.027, 0, 0, 0)
+CloseChangelog.Position = UDim2.new(0.934, 0, 0.002, 0)
+ChangelogTitle.Position = UDim2.new(-0, 0, -0.005, 0)
+BlowBubblesMenu.Position = UDim2.new(0.036, 0, 0.563, 0)
+BlowBubblesFrame.Position = UDim2.new(0.41, 0, 0.384, 0)
+BlowBubblesStart.Position = UDim2.new(0.066, 0, 0.473, 0)
+BlowBubblesStop.Position = UDim2.new(0.57, 0, 0.473, 0)
+CloseBlowBubbles.Position = UDim2.new(0.865, 0, 0.003, 0)
+BlowBubblesTitle.Position = UDim2.new(0, 0, -0.001, 0)
+UltraCounterStop.Position = UDim2.new(0.529, 0, 0.725, 0)
+ProtectionsMenu.Position = UDim2.new(0.36, 0, 0.563, 0)
+ProtectionsFrame.Position = UDim2.new(0.22, 0, 0.169, 0)
+CloseProtectionMenu.Position = UDim2.new(0.962, 0, -0.002, 0)
+AntiAFKMenuProtectionButton.Position = UDim2.new(0.062, 0, 0.124, 0)
+ProtectionsMenuTitle.Position = UDim2.new(0, 0, -0.001, 0)
+AntiAFKProtectionMenuFrame.Position = UDim2.new(0.41, 0, 0.384, 0)
+AntiAFKStart.Position = UDim2.new(0.269, 0, 0.421, 0)
+CloseAntiAFKMenu.Position = UDim2.new(0.865, 0, 0.003, 0)
+AntiAFKTitle.Position = UDim2.new(0, 0, -0.001, 0)
+
+
+--Size
+
+
+MainGUI.Size = UDim2.new(0, 287, 0, 172)
+UltraFrame.Size = UDim2.new(0, 343, 0, 199)
+UltraMenu.Size = UDim2.new(0, 79, 0, 37)
+guiname.Size = UDim2.new(0, 287, 0, 29)
+EggName.Size = UDim2.new(0, 200, 0, 50)
+UltraStart.Size = UDim2.new(0, 89, 0, 28)
+UltraTitle.Size = UDim2.new(0, 343, 0, 29)
+CloseMenu.Size = UDim2.new(0, 33, 0, 28)
+CloseUltra.Size = UDim2.new(0, 33, 0, 28)
+OpenMenu.Size = UDim2.new(0, 81, 0, 22)
+UltraCounterMenu.Size = UDim2.new(0, 79, 0, 37)
+UltraCounterFrame.Size = UDim2.new(0, 512, 0, 254)
+CloseUltraCounter.Size = UDim2.new(0, 33, 0, 28)
+CounterEggName.Size = UDim2.new(0, 200, 0, 50)
+CounterEggCost.Size = UDim2.new(0, 200, 0, 50)
+UltraCounterStart.Size = UDim2.new(0, 89, 0, 28)
+UltraCounterTitle.Size = UDim2.new(0, 478, 0, 29)
+CurrentVersion.Size = UDim2.new(0, 195, 0, 18)
+ChangelogMenu.Size = UDim2.new(0, 79, 0, 37)
+ChangelogFrame.Size = UDim2.new(0, 511, 0, 257)
+ScrollingChangelog.Size = UDim2.new(0, 511, 0, 277)
+ChangelogInformation.Size = UDim2.new(0, 496, 0, 2500)
+CloseChangelog.Size = UDim2.new(0, 33, 0, 28)
+ChangelogTitle.Size = UDim2.new(0, 477, 0, 29)
+BlowBubblesMenu.Size = UDim2.new(0, 79, 0, 37)
+BlowBubblesFrame.Size = UDim2.new(0, 246, 0, 154)
+BlowBubblesStart.Size = UDim2.new(0, 89, 0, 28)
+BlowBubblesStop.Size = UDim2.new(0, 89, 0, 28)
+CloseBlowBubbles.Size = UDim2.new(0, 33, 0, 28)
+BlowBubblesTitle.Size = UDim2.new(0, 212, 0, 29)
+UltraCounterStop.Size = UDim2.new(0, 89, 0, 28)
+ProtectionsMenu.Size = UDim2.new(0, 79, 0, 37)
+ProtectionsFrame.Size = UDim2.new(0, 867, 0, 437)
+CloseProtectionMenu.Size = UDim2.new(0, 33, 0, 28)
+AntiAFKMenuProtectionButton.Size = UDim2.new(0, 87, 0, 30)
+ProtectionsMenuTitle.Size = UDim2.new(0, 833, 0, 29)
+AntiAFKProtectionMenuFrame.Size = UDim2.new(0, 246, 0, 154)
+AntiAFKStart.Size = UDim2.new(0, 113, 0, 39)
+CloseAntiAFKMenu.Size = UDim2.new(0, 33, 0, 28)
+AntiAFKTitle.Size = UDim2.new(0, 212, 0, 29)
+
+--Starting Visibility
+UltraFrame.Visible = false
+CloseUltra.Visible = false
+CloseMenu.Visible = false
+MainGUI.Visible = false
+UltraCounterFrame.Visible = false
+ChangelogFrame.Visible = false
+BlowBubblesFrame.Visible = false
+AntiAFKProtectionMenuFrame.Visible = false
+ProtectionsFrame.Visible = false
+UserTimeFrame.Visible = true
+OpenTimeMenu.Visible = false
+Page2Frame.Visible = false
+StreamerModeFrame.Visible = false
+ModProtectionMenuFrame.Visible = false
+BuiltInExecutorFrame.Visible = false
+ClaimRewardsAutomaticallyFrame.Visible = false
+
+--BlowBubblesLocal
+
+local BlowBubblesValue = 0
+local UltraEggHatchValue = 0
+
+--BooleanStreamerModeEnabled
+local IsStreamerModeCurrentlyEnabled = false
+
+--BooleanModProtectionModeEnabled
+local IsModProtectionModeEnabled = false
+
+--BooleanAutoClaimValues
+local IsAutoClaimDailyRewardEnabled = false
+local IsAutoSpinTheWheelEnabled = false
+local IsShardRewardsAutoClaimRewardsEnabled = false
+
+
+--Function Scripts
+
+function OpenGameMenu()
+	MainGUI.Visible = true
+	CloseMenu.Visible = true
+	OpenMenu.Visible = false
+end
+
+function OpenUltraMenu()
+	UltraFrame.Visible = true
+	CloseUltra.Visible = true
+	MainGUI.Visible = false
+	CloseMenu.Visible = false
+end
+
+function CloseUltraMenu()
+	UltraFrame.Visible = false
+	CloseUltra.Visible = false
+	MainGUI.Visible = true
+	CloseMenu.Visible = true
+end
+
+function CloseMainGUIMenu()
+	MainGUI.Visible = false
+	CloseMenu.Visible = false
+	OpenMenu.Visible = true
+end
+
+function OpenUltraCounterMenu()
+	UltraCounterFrame.Visible = true
+	MainGUI.Visible = false
+	CloseMenu.Visible = false
+end
+
+function CloseUltraCounterMenu()
+	UltraCounterFrame.Visible = false
+	CloseMenu.Visible = true
+	MainGUI.Visible = true
+end
+
+function OpenChangelog()
+	MainGUI.Visible = false
+	CloseMenu.Visible = false
+	ChangelogFrame.Visible = true
+end
+
+function CloseTheChangelogMenu()
+	ChangelogFrame.Visible = false
+	MainGUI.Visible = true
+	CloseMenu.Visible = true
+end
+
+function OpenBlowBubblesMenu()
+	MainGUI.Visible = false
+	BlowBubblesFrame.Visible = true
+	CloseMenu.Visible = false
+end
+
+function CloseBlowBubblesMenu()
+	MainGUI.Visible = true
+	CloseMenu.Visible = true
+	BlowBubblesFrame.Visible = false
+end
+
+function StartBlowBubblesAuto()
+	BlowBubblesValue = 1
+	while wait() do
+		while BlowBubblesValue == 1 do
+			game.ReplicatedStorage.NetworkRemoteEvent:FireServer("BlowBubble")
+			wait()
+		end
+	end
+end
+
+function StopBlowBubblesAuto()
+	BlowBubblesValue = 0
+end
+
+function OpenProtectionsMenu()
+	ProtectionsFrame.Visible = true
+	MainGUI.Visible = false
+	CloseMenu.Visible = false
+end
+
+function CloseProtectionsMenu()
+	ProtectionsFrame.Visible = false
+	MainGUI.Visible = true
+	CloseMenu.Visible = true
+end
+
+function OpenAntiAFKMenu()
+	ProtectionsFrame.Visible = false
+	AntiAFKProtectionMenuFrame.Visible = true
+end
+
+function CloseAntiAFKMenuFunction()
+	AntiAFKProtectionMenuFrame.Visible = false
+	ProtectionsFrame.Visible = true
+end
+
+function StartAntiAFK()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end
+
+function OpenTimeFrameFunct()
+	OpenTimeMenu.Visible = false
+	UserTimeFrame.Visible = true
+end
+
+function CloseTimeFrameFunct()
+	OpenTimeMenu.Visible = true
+	UserTimeFrame.Visible = false
+end
+
+function OpenPage2FrameFunct()
+	MainGUI.Visible = false
+	Page2Frame.Visible = true
+	CloseMenu.Visible = false
+end
+
+function ClosePage2FrameFunct()
+	Page2Frame.Visible = false
+	MainGUI.Visible = true
+	CloseMenu.Visible = true
+end
+
+function OpenStreamerModeFrameFunct()
+	Page2Frame.Visible = false
+	StreamerModeFrame.Visible = true
+end
+
+function CloseStreamerModeFrameFunct()
+	StreamerModeFrame.Visible = false
+	Page2Frame.Visible = true
+end
+
+function OpenModProtectionModeFrameFunct()
+	ProtectionsFrame.Visible = false
+	ModProtectionMenuFrame.Visible = true
+end
+
+function CloseModProtectionModeFrameFunct()
+	ProtectionsFrame.Visible = true
+	ModProtectionMenuFrame.Visible = false
+end
+
+function OpenExecutorFrameFunct()
+	Page2Frame.Visible = false
+	BuiltInExecutorFrame.Visible = true
+end
+
+function CloseExecutorFrameFunct()
+	Page2Frame.Visible = true
+	BuiltInExecutorFrame.Visible = false
+end
+
+function ExecutorExecuteFunct()
+	loadstring(BuiltInExecutorSourceFrameTextBox.Text)()
+end
+
+function ClearExecutorFunct()
+	BuiltInExecutorSourceFrameTextBox.Text = "*poof!*"
+	wait(1)
+	BuiltInExecutorSourceFrameTextBox.Text = ""
+end
+
+function EnableModProtectionModeFunct()
+	IsModProtectionModeEnabled = true
+	local PlrsInSessionModProtection = game.Players:GetChildren()
+	
+	for i, v in pairs(PlrsInSessionModProtection) do
+		if v.ClassName == "Player" and v.UserId == 74834893 or v.UserId == 941072 or v.UserId == 15319024 then
+			game.Players.LocalPlayer:Kick("A moderator of BGS has joined the game and you have been kicked to prevent being caught.")
+		end
+	end
+	game.Players.PlayerAdded:Connect(function(plr)
+		if plr.UserId == 74834893 or plr.UserId == 941072 or plr.UserId == 15319024 then
+			game.Players.LocalPlayer:Kick("A moderator of Bubble Gum Simulator has joined the game and you have been kicked to prevent being caught.")
+		end
+	end)
+end
+
+function DisableModProtectionModeFunct()
+	IsModProtectionModeEnabled = false
+end
+
+function EnableStreamerModeFunct()
+	IsStreamerModeCurrentlyEnabled = true
+	local PlrStreamerTag = game.Players:GetChildren()
+
+	for i, v in pairs(PlrStreamerTag) do
+		v.Character.Head.CustomPlayerTag.Title.UIGradient:Destroy()
+		v.Character.Head.CustomPlayerTag.Title.Text = StreamerModeSetSelfName.Text
+		v.Character.Head.CustomPlayerTag.Username.Text = ("Streamer Mode Enabled. Stay safe, friend.")
+	end
+
+	local PlrStreamerLeader = game.CoreGui.RobloxGui.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame:GetChildren()
+
+	for i, v in pairs(PlrStreamerLeader) do
+		v.ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerName.PlayerName.Text = StreamerModeSetOthersNames.Text
+	end
+
+	game.Players.LocalPlayer.leaderstats:Destroy()
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.StatsFrame.Coins.Visible = false
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.StatsFrame.Gems.Visible = false
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.StatsFrame.Bubble.Visible = false
+	--game.Players.LocalPlayer.PlayerGui.ScreenGui.CollectionFrame.Main.Inner.Options.Trade:Destroy()
+	
+	game.Players.PlayerAdded:Connect(function(plr)
+		plr.Character.Head.CustomPlayerTag.Title.Text = StreamerModeSetSelfName.Text
+		plr.Character.Head.CustomPlayerTag.Username.Text = ("Streamer Mode Enabled. Stay safe, friend.")
+		local PlrStreamerLeader2 = game.CoreGui.RobloxGui.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame:GetChildren()
+
+		for i, v in pairs(PlrStreamerLeader2) do
+			v.ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerName.PlayerName.Text = StreamerModeSetOthersNames.Text
+		end
+	end)
+end
+
+function StartTimer()
+	while wait() do
+		local EPOXTime = os.time()
+		local DateEPOX = os.date("Today is %A, %B %d, %Y.", EPOXTime)
+		local TimeTextEPOX = os.date("It's currently %I:%M:%S %p, %Z", EPOXTime)
+		UserTimeDate.Text = (DateEPOX)
+		UserTimeTime.Text = (TimeTextEPOX)
+	end
+end
+
+function OpenClaimRewardMenuFunct()
+	Page2Frame.Visible = false
+	ClaimRewardsAutomaticallyFrame.Visible = true
+end
+
+function CloseClaimRewardMenuFunct()
+	ClaimRewardsAutomaticallyFrame.Visible = false
+	Page2Frame.Visible = true
+end
+
+function TeleportToMerchantFunct()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88.4751816, 45.6000061, -228.067963, 0.998906493, 0, -0.0467526503, 0, 1, 0, 0.0467526503, 0, 0.998906493)
+end
+
+function BuyMerchantItem1Funct()
+	game.ReplicatedStorage.NetworkRemoteEvent:FireServer("BuyMerchantItem", 1)
+end
+
+function BuyMerchantItem2Funct()
+	game.ReplicatedStorage.NetworkRemoteEvent:FireServer("BuyMerchantItem", 2)
+end
+
+function BuyMerchantItem3Funct()
+	game.ReplicatedStorage.NetworkRemoteEvent:FireServer("BuyMerchantItem", 3)
+end
+
+function TeleportToDailyRewardFunct()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6.289361, 45.6000061, 6.88707972, -0.898855805, 0, 0.438244492, 0, 1, 0, -0.438244492, 0, -0.898855805)
+end
+
+function ClaimDailyRewardFunct()
+	game.ReplicatedStorage.NetworkRemoteEvent:FireServer("ClaimDailyReward")
+end
+
+function EnableAutoClaimDailyRewardFunct()
+	IsAutoClaimDailyRewardEnabled = true
+	while wait() do
+		if IsAutoClaimDailyRewardEnabled == true then
+			game.ReplicatedStorage.NetworkRemoteEvent:FireServer("ClaimDailyReward")
+		end
+	end
+end
+
+function DisableAutoClaimDailyRewardFunct()
+	IsAutoClaimDailyRewardEnabled = false
+end
+
+function TeleportToSpinTheWheelFunct()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8.19312191, 45.6000061, 47.4579201, 0.20472087, 2.94468396e-08, 0.978820384, 3.80400351e-08, 1, -3.80401026e-08, -0.978820384, 4.50219666e-08, 0.20472087)
+end
+
+function SpinTheWheelFunct()
+	game.ReplicatedStorage.NetworkRemoteEvent:FireServer("SpinToWin")
+end
+
+function EnableAutoSpinTheWheelFunct()
+	IsAutoSpinTheWheelEnabled = true
+	while wait() do
+		if IsAutoSpinTheWheelEnabled == true then
+			game.ReplicatedStorage.NetworkRemoteEvent:FireServer("SpinToWin")
+		end
+	end
+end
+
+function DisableAutoSpinTheWheelFunct()
+	IsAutoSpinTheWheelEnabled = false
+end
+
+function TeleportToShardShopFunct()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1791.55859, 1855.46985, 11071.9307, 0.309089333, 0, 0.951032996, 0, 1, 0, -0.951032996, 0, 0.309089333)
+end
+
+function TeleporttoShardRewardsFunct()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1724.65881, 1855.51233, 11034.9238, 0.982588172, 3.2758347e-37, -0.185796961, -1.92171672e-37, 1, 7.46825312e-37, 0.185796961, -6.98116806e-37, 0.982588172)
+end
+
+function ClaimShardRewardsFunct()
+	game.ReplicatedStorage.NetworkRemoteEvent:FireServer("ClaimShardQuestReward")
+end
+
+function EnableAutoShardRewardsFunct()
+	IsShardRewardsAutoClaimRewardsEnabled = true
+	while wait() do
+		if IsShardRewardsAutoClaimRewardsEnabled == true then
+			game.ReplicatedStorage.NetworkRemoteEvent:FireServer("ClaimShardQuestReward")
+			game.ReplicatedStorage.NetworkRemoteEvent:FireServer("GetShardQuest", SetShardAutoDifficultyAutoAssign.Text)
+		end
+	end
+end
+
+function DisableAutoShardRewardsFunct()
+	IsShardRewardsAutoClaimRewardsEnabled = false
+end
+
+function TeleportToPotionBrewFunct()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1740.39026, 2705.99048, 11045.3525, -0.964207292, -9.08030768e-17, 0.265149534, -9.52319871e-17, 1, -3.8480256e-18, -0.265149534, -2.89610127e-17, -0.964207292)
+end
+
+function StartUltraCounter()
+	UltraEggHatchValue = 1
+	
+	local EggsFired = Instance.new("ScreenGui")
+	local SummaryAmount = Instance.new("TextLabel")
+	local EggsOpened = Instance.new("TextLabel")
+	local EggAmount = 0
+
+	--Parents
+
+	EggsFired.Parent = game.CoreGui
+	SummaryAmount.Parent = EggsFired
+	EggsOpened.Parent = EggsFired
+
+
+	--ResetOnRespawn
+
+	EggsFired.ResetOnSpawn = false
+
+
+	--Active
+
+	SummaryAmount.Active = true
+	EggsOpened.Active = true
+
+	--Name
+
+	EggsFired.Name = ("EggsFired")
+	SummaryAmount.Name = ("SummaryAmount")
+	EggsOpened.Name = ("EggsOpened")
+
+	--BackgroundTransparency
+
+	SummaryAmount.BackgroundTransparency = (1)
+	EggsOpened.BackgroundTransparency = (1)
+
+	--Selectable
+
+	EggsOpened.Selectable = false
+	SummaryAmount.Selectable = false
+
+	--Visible
+
+	EggsOpened.Visible = true
+	SummaryAmount.Visible = true
+
+	--Fonts
+
+	EggsOpened.Font = ("PatrickHand")
+	SummaryAmount.Font = ("PatrickHand")
+
+	--Text
+	SummaryAmount.Text = ("You have opened the following amount of eggs:")
+
+	--TextColor
+	EggsOpened.TextColor3 = Color3.fromRGB(255, 0, 0)
+	SummaryAmount.TextColor3 = Color3.fromRGB(255, 0, 0)
+
+	--TextScaled
+	SummaryAmount.TextScaled = false
+	EggsOpened.TextScaled = true
+
+	--TextSize
+	EggsOpened.TextSize = (16)
+	SummaryAmount.TextSize = (16)
+
+	--Text Label Positions
+	EggsOpened.Position = UDim2.new(0.705, 0, 0.805, 0)
+	SummaryAmount.Position = UDim2.new(0.779, 0, 0.745, 0)
+
+	--Text Label Size
+	EggsOpened.Size = UDim2.new(0, 356, 0, 37)
+	SummaryAmount.Size = UDim2.new(0, 166, 0, 32)
+
+	local function AddCounter()
+		EggsOpened.Text = (EggAmount)
+	end
+
+	local function AddAmount()
+		EggAmount = EggAmount + 3
+	end
+
+	--Coin Script
+	local CoinsBought = Instance.new("ScreenGui")
+	local CoinsSpent = Instance.new("TextLabel")
+	local CoinSummary = Instance.new("TextLabel")
+	local CoinAmount = 0
+
+	--Parents
+
+	CoinsBought.Parent = game.CoreGui
+	CoinSummary.Parent = CoinsBought
+	CoinsSpent.Parent = CoinsBought
+
+
+	--ResetOnRespawn
+
+	CoinsBought.ResetOnSpawn = false
+
+
+	--Active
+
+	CoinSummary.Active = true
+	CoinsSpent.Active = true
+
+	--Name
+
+	CoinsBought.Name = ("CoinsBought")
+	CoinSummary.Name = ("CoinSummary")
+	CoinsSpent.Name = ("CoinsSpent")
+
+	--BackgroundTransparency
+
+	CoinSummary.BackgroundTransparency = (1)
+	CoinsSpent.BackgroundTransparency = (1)
+
+	--Selectable
+
+	CoinsSpent.Selectable = false
+	CoinSummary.Selectable = false
+
+	--Visible
+
+	CoinsSpent.Visible = true
+	CoinSummary.Visible = true
+
+	--Fonts
+
+	CoinsSpent.Font = ("PatrickHand")
+	CoinSummary.Font = ("PatrickHand")
+
+	--Text
+	CoinSummary.Text = ("You have spent the following amount of coins:")
+
+	--TextColor
+	CoinsSpent.TextColor3 = Color3.fromRGB(255, 238, 0)
+	CoinSummary.TextColor3 = Color3.fromRGB(255, 238, 0)
+
+	--TextScaled
+	CoinSummary.TextScaled = false
+	CoinsSpent.TextScaled = true
+
+	--TextSize
+	CoinsSpent.TextSize = (16)
+	CoinSummary.TextSize = (16)
+
+	--Text Label Positions
+	CoinsSpent.Position = UDim2.new(0.705, 0, 0.634, 0)
+	CoinSummary.Position = UDim2.new(0.779, 0, 0.554, 0)
+
+	--Text Label Size
+	CoinsSpent.Size = UDim2.new(0, 356, 0, 37)
+	CoinSummary.Size = UDim2.new(0, 166, 0, 32)
+
+	local function AddCoinsSpent()
+		CoinsSpent.Text = (CoinAmount)
+	end
+
+	local function AddCoinAmount()
+		CoinAmount = CoinAmount + CounterEggCost.Text
+	end
+
+	local CounterEggText = CounterEggName.Text
+	while UltraEggHatchValue == 1 do
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		--[[game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", CounterEggText, "Multi")--]]
+		AddAmount()
+		AddCounter()
+		AddCoinAmount()
+		AddCoinsSpent()
+		wait()
+	end
+end
+
+function StopUltraCounter()
+	UltraEggHatchValue = 0
+	game.CoreGui.EggsFired:Destroy()
+	game.CoreGui.CoinsBought:Destroy()
+end
+
+function StartUltra()
+	local EggText = EggName.Text
+	while wait() do
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		game.ReplicatedStorage.NetworkRemoteEvent:FireServer("PurchaseEgg", EggText, "Multi")
+		wait()
+	end
+
+end
+
+--Mouse Click
+
+
+OpenMenu.MouseButton1Click:Connect(OpenGameMenu)
+CloseMenu.MouseButton1Click:Connect(CloseMainGUIMenu)
+CloseUltra.MouseButton1Click:Connect(CloseUltraMenu)
+UltraMenu.MouseButton1Click:Connect(OpenUltraMenu)
+UltraStart.MouseButton1Click:Connect(StartUltra)
+UltraCounterMenu.MouseButton1Click:Connect(OpenUltraCounterMenu)
+CloseUltraCounter.MouseButton1Click:Connect(CloseUltraCounterMenu)
+UltraCounterStart.MouseButton1Click:Connect(StartUltraCounter)
+ChangelogMenu.MouseButton1Click:Connect(OpenChangelog)
+CloseChangelog.MouseButton1Click:Connect(CloseTheChangelogMenu)
+BlowBubblesMenu.MouseButton1Click:Connect(OpenBlowBubblesMenu)
+CloseBlowBubbles.MouseButton1Click:Connect(CloseBlowBubblesMenu)
+BlowBubblesStart.MouseButton1Click:Connect(StartBlowBubblesAuto)
+BlowBubblesStop.MouseButton1Click:Connect(StopBlowBubblesAuto)
+UltraCounterStop.MouseButton1Click:Connect(StopUltraCounter)
+ProtectionsMenu.MouseButton1Click:Connect(OpenProtectionsMenu)
+CloseProtectionMenu.MouseButton1Click:Connect(CloseProtectionsMenu)
+AntiAFKMenuProtectionButton.MouseButton1Click:Connect(OpenAntiAFKMenu)
+CloseAntiAFKMenu.MouseButton1Click:Connect(CloseAntiAFKMenuFunction)
+AntiAFKStart.MouseButton1Click:Connect(StartAntiAFK)
+OpenTimeMenu.MouseButton1Click:Connect(OpenTimeFrameFunct)
+CloseTimeMenu.MouseButton1Click:Connect(CloseTimeFrameFunct)
+Page2PageMenu.MouseButton1Click:Connect(OpenPage2FrameFunct)
+ClosePage2Menu.MouseButton1Click:Connect(ClosePage2FrameFunct)
+StreamerModePage2Button.MouseButton1Click:Connect(OpenStreamerModeFrameFunct)
+CloseStreamerModeMenu.MouseButton1Click:Connect(CloseStreamerModeFrameFunct)
+StreamerModeEnable.MouseButton1Click:Connect(EnableStreamerModeFunct)
+ModProtectionMenuProtectionButton.MouseButton1Click:Connect(OpenModProtectionModeFrameFunct)
+CloseModProtectionMenu.MouseButton1Click:Connect(CloseModProtectionModeFrameFunct)
+ModProtectionStart.MouseButton1Click:Connect(EnableModProtectionModeFunct)
+ModProtectionStop.MouseButton1Click:Connect(DisableModProtectionModeFunct)
+BuiltInExecutorPage2Button.MouseButton1Click:Connect(OpenExecutorFrameFunct)
+BuiltInExecutorCloseButton.MouseButton1Click:Connect(CloseExecutorFrameFunct)
+BuiltInExecutorClearButton.MouseButton1Click:Connect(ClearExecutorFunct)
+BuiltInExecutorExecuteButton.MouseButton1Click:Connect(ExecutorExecuteFunct)
+ClaimRewardsAutomaticallyPage2Button.MouseButton1Click:Connect(OpenClaimRewardMenuFunct)
+CloseClaimRewardsAutomaticallyMenu.MouseButton1Click:Connect(CloseClaimRewardMenuFunct)
+TeleportToMerchantButton.MouseButton1Click:Connect(TeleportToMerchantFunct)
+BuyMerchantItem1Button.MouseButton1Click:Connect(BuyMerchantItem1Funct)
+BuyMerchantItem2Button.MouseButton1Click:Connect(BuyMerchantItem2Funct)
+BuyMerchantItem3Button.MouseButton1Click:Connect(BuyMerchantItem3Funct)
+ClaimRewardsTeleportToClaimRewardsButton.MouseButton1Click:Connect(TeleportToDailyRewardFunct)
+ClaimRewardsClaimReward.MouseButton1Click:Connect(ClaimDailyRewardFunct)
+ClaimRewardsEnableAutoClaimReward.MouseButton1Click:Connect(EnableAutoClaimDailyRewardFunct)
+ClaimRewardsDisableAutoClaimReward.MouseButton1Click:Connect(DisableAutoClaimDailyRewardFunct)
+TeleportToSpinTheWheel.MouseButton1Click:Connect(TeleportToSpinTheWheelFunct)
+SpinTheWheel.MouseButton1Click:Connect(SpinTheWheelFunct)
+AutomaticallySpinTheWheelEnable.MouseButton1Click:Connect(EnableAutoSpinTheWheelFunct)
+AutomaticallySpinTheWheelDisable.MouseButton1Click:Connect(DisableAutoSpinTheWheelFunct)
+TeleporttoShardShop.MouseButton1Click:Connect(TeleportToShardShopFunct)
+TeleporttoShardRewards.MouseButton1Click:Connect(TeleporttoShardRewardsFunct)
+ClaimShardRewards.MouseButton1Click:Connect(ClaimShardRewardsFunct)
+EnableAutoClaimShardRewards.MouseButton1Click:Connect(EnableAutoShardRewardsFunct)
+DisableAutoClaimShardRewards.MouseButton1Click:Connect(DisableAutoShardRewardsFunct)
+TeleporttoBrewPotionRoom.MouseButton1Click:Connect(TeleportToPotionBrewFunct)
+
+
+
+
+
+StartTimer()
+
+
+--MaintenanceKick
+
+--[[local MaintenanceScreenGui = Instance.new("ScreenGui")
+local MaintenanceMessage = Instance.new("Frame")
+local MaintenanceIssueTime = Instance.new("TextLabel")
+local MaintenanceInformation = Instance.new("TextLabel")
+local MaintenanceKick = Instance.new("TextLabel")
+local MaintenanceMessageTitle = Instance.new("TextLabel")
+
+--Enabled/Active
+MaintenanceScreenGui.Enabled = true
+MaintenanceScreenGui.ResetOnSpawn = false
+MaintenanceMessage.Active = true
+MaintenanceIssueTime.Active = false
+MaintenanceInformation.Active = false
+MaintenanceKick.Active = true
+MaintenanceMessageTitle.Active = false
+
+--Parents
+MaintenanceScreenGui.Parent = game.CoreGui
+MaintenanceMessage.Parent = MaintenanceScreenGui
+MaintenanceIssueTime.Parent = MaintenanceMessage
+MaintenanceInformation.Parent = MaintenanceMessage
+MaintenanceKick.Parent = MaintenanceMessage
+MaintenanceMessageTitle.Parent = MaintenanceMessage
+
+--Names
+MaintenanceScreenGui.Name = ("MaintenanceScreenGui")
+MaintenanceMessage.Name = ("MaintenanceMessage")
+MaintenanceIssueTime.Name = ("MaintenanceIssueTime")
+MaintenanceInformation.Name = ("MaintenanceInformation")
+MaintenanceKick.Name = ("MaintenanceKick")
+MaintenanceMessageTitle.Name = ("MaintenanceMessageTitle")
+
+--BackgroundTransparency/Color
+MaintenanceMessage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MaintenanceMessage.BackgroundTransparency = (0)
+MaintenanceIssueTime.BackgroundTransparency = (1)
+MaintenanceInformation.BackgroundTransparency = (1)
+MaintenanceKick.BackgroundTransparency = (1)
+MaintenanceMessageTitle.BackgroundTransparency = (1)
+
+--Visible
+MaintenanceMessage.Visible = true
+MaintenanceIssueTime.Visible = true
+MaintenanceInformation.Visible = true
+MaintenanceKick.Visible = true
+MaintenanceMessageTitle.Visible = true
+
+--Font
+MaintenanceIssueTime.Font = ("Ubuntu")
+MaintenanceInformation.Font = ("Ubuntu")
+MaintenanceKick.Font = ("Ubuntu")
+MaintenanceMessageTitle.Font = ("Ubuntu")
+
+--Text
+MaintenanceIssueTime.Text = ("Maintenance issued at: null/null/null null:null AM/PM")
+MaintenanceInformation.Text = ("You are getting this message as the GUI is currently under maintenance. This was probably because of a Bubble Gum Simulator update that might have broke the script.                             Maintenance information: To be determined...                                                                Under maintenance till: null/null/null null:null AM/PM                                   Maintenance level: ROBLOXCRITICAL")
+MaintenanceKick.Text = ("Kicking in 10...")
+MaintenanceMessageTitle.Text = ("GUI UNDER MAINTENANCE")
+
+--TextColor
+MaintenanceIssueTime.TextColor3 = Color3.fromRGB(255, 0, 255)
+MaintenanceInformation.TextColor3 = Color3.fromRGB(255, 0, 255)
+MaintenanceKick.TextColor3 = Color3.fromRGB(255, 0, 255)
+MaintenanceMessageTitle.TextColor3 = Color3.fromRGB(255, 0, 255)
+
+--TextScaled
+MaintenanceIssueTime.TextScaled = true
+MaintenanceInformation.TextScaled = true
+MaintenanceKick.TextScaled = true
+MaintenanceMessageTitle.TextScaled = true
+
+--TextSized
+MaintenanceIssueTime.TextWrapped = true
+MaintenanceInformation.TextWrapped = true
+MaintenanceKick.TextWrapped = true
+MaintenanceMessageTitle.TextWrapped = true
+
+--TextXYAlignment
+MaintenanceIssueTime.TextXAlignment = ("Center")
+MaintenanceIssueTime.TextYAlignment = ("Center")
+MaintenanceInformation.TextXAlignment = ("Center")
+MaintenanceInformation.TextYAlignment = ("Center")
+MaintenanceKick.TextXAlignment = ("Center")
+MaintenanceKick.TextYAlignment = ("Top")
+MaintenanceMessageTitle.TextXAlignment = ("Center")
+MaintenanceMessageTitle.TextYAlignment = ("Center")
+
+--Position
+MaintenanceMessage.Position = UDim2.new(0, 0, 0, 0)
+MaintenanceIssueTime.Position = UDim2.new(0.212, 0, 0.334, 0)
+MaintenanceInformation.Position = UDim2.new(0.204, 0, 0.059, 0)
+MaintenanceKick.Position = UDim2.new(0.212, 0, 0.433, 0)
+MaintenanceMessageTitle.Position = UDim2.new(0.204, 0, 0, 0)
+
+--Size
+MaintenanceMessage.Size = UDim2.new(0, 1920, 0, 1080)
+MaintenanceIssueTime.Size = UDim2.new(0, 590, 0, 113)
+MaintenanceInformation.Size = UDim2.new(0, 590, 0, 287)
+MaintenanceKick.Size = UDim2.new(0, 590, 0, 173)
+MaintenanceMessageTitle.Size = UDim2.new(0, 590, 0, 50)
+
+--AutokickFunction
+MaintenanceKick.Text = ("Kicking in 10...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 9...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 8...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 7...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 6...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 5...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 4...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 3...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 2...")
+wait(1)
+MaintenanceKick.Text = ("Kicking in 1...")
+wait(1)
+MaintenanceKick.Text = ("Kicking...")
+wait(1)
+game.Players.LocalPlayer:Kick("You are getting this message as the GUI is currently under maintenance. This was probably because of a Bubble Gum Simulator update that might have broke the script.                             Maintenance information: To be determined...                                                                Under maintenance till: null/null/null null:null AM/PM                                                                                 Maintenance level: ROBLOXCRITICAL")--]]
