@@ -19,7 +19,7 @@ UnstableDevBetaWarningNotification.Name = "UnstableDevBetaWarningNotification"
 UnstableDevBetaWarningNotification.Parent = UnstableDeveloperBetaVersionWarningGui
 UnstableDevBetaWarningNotification.Active = true
 UnstableDevBetaWarningNotification.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-UnstableDevBetaWarningNotification.Position = UDim2.new(0.365103632, 0, -2, 0)
+UnstableDevBetaWarningNotification.Position = UDim2.new(0.403, 0, -2, 0)
 UnstableDevBetaWarningNotification.Size = UDim2.new(0, 369, 0, 243)
 UnstableDevBetaWarningNotification.Visible = true
 UnstableDevBetaWarningNotification.Draggable = false
@@ -76,17 +76,17 @@ UnstableDevBetaWarningText.TextWrapped = true
 --Define Functions
 
 local function RedirectToStableGUI()
-	UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.365103632, 0, -2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 2, true)
+	UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.403, 0, -2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 2, true)
 	wait(2.5)
 	UnstableDeveloperBetaVersionWarningGui:Destroy()
 	loadstring(game:HttpGet('https://pastebin.com/raw/Pyh11inF'))()
 end
 
 local function LaunchUnstableBuild()
-	UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.365103632, 0, -2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 2, true)
+	UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.403, 0, -2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 2, true)
 	wait(2.5)
 	UnstableDeveloperBetaVersionWarningGui:Destroy()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Sneakificial/BGS-Scripts/main/Unstable%20GUI%20Source?token=GHSAT0AAAAAABQK7MTNHLXHHJ4MGCIFIXBGYOYIOPQ'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Sneakificial/BGS-Scripts/main/Unstable%20GUI%20Source'))()
 end
 
 --Run Functions
@@ -96,4 +96,4 @@ UnstableDevBetaTermAgree.MouseButton1Click:Connect(LaunchUnstableBuild)
 
 --ALL ASSETS NOW LOADED, RUN SCRIPT
 
-UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.365103632, 0, 0.315650046, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, 2, true)
+UnstableDevBetaWarningNotification:TweenPosition(UDim2.new(0.403, 0, 0.387, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, 2, true)
