@@ -1,0 +1,115 @@
+if game.Players.LocalPlayer.UserId == 145591207 then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/Sneakificial/BGS-Scripts/main/MinSim2-Unstable-Source'))()
+else
+	local BanMessageScreenGui = Instance.new("ScreenGui")
+	local BanMessage = Instance.new("Frame")
+	local BanKick = Instance.new("TextLabel")
+	local BanMessageTitle = Instance.new("TextLabel")
+	local BanInformation = Instance.new("TextLabel")
+	
+	--Parent
+	BanMessageScreenGui.Parent = game.CoreGui
+	BanMessage.Parent = BanMessageScreenGui
+	BanKick.Parent = BanMessage
+	BanMessageTitle.Parent = BanMessage
+	BanInformation.Parent = BanMessage
+	
+	--Active
+	BanMessageScreenGui.Enabled = true
+	BanMessage.Active = true
+	BanKick.Active = false
+	BanMessageTitle.Active = false
+	BanInformation.Active = false
+	BanMessageScreenGui.ResetOnSpawn = false
+	
+	--Color
+	BanMessage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	BanKick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BanKick.BackgroundTransparency = (1)
+	BanMessageTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BanMessageTitle.BackgroundTransparency = (1)
+	BanInformation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BanInformation.BackgroundTransparency = (1)
+	BanKick.TextColor3 = Color3.fromRGB(255, 0, 4)
+	BanMessageTitle.TextColor3 = Color3.fromRGB(255, 0, 4)
+	BanInformation.TextColor3 = Color3.fromRGB(255, 0, 4)
+	
+	--BorderSizePixel
+	BanMessage.BorderSizePixel = (0)
+	BanKick.BorderSizePixel = (0)
+	BanMessageTitle.BorderSizePixel = (0)
+	BanInformation.BorderSizePixel = (0)
+	
+	--Font
+	BanKick.Font = ("Ubuntu")
+	BanMessageTitle.Font = ("Ubuntu")
+	BanInformation.Font = ("Ubuntu")
+	
+	--Text
+	BanKick.Text = ("Kicking in 10...")
+	BanMessageTitle.Text = ("KICKED FOR USING GUI WITHOUT PERMISSION")
+	BanInformation.Text = ("You have been kicked from the game for using this GUI without being whitelisted. You probably have obtained this GUI without being verified by the creator. Please contact the person who you got it from to ask for verification for you. You cannot ask if you are unverified and did not get it from a verified source.")
+	
+	--TextScaled
+	BanKick.TextScaled = true
+	BanMessageTitle.TextScaled = true
+	BanInformation.TextScaled = true
+	
+	--TextSize
+	BanKick.TextSize = (30)
+	BanMessageTitle.TextSize = (14)
+	BanInformation.TextSize = (30)
+	
+	--Name
+	BanMessageScreenGui.Name = ("BanMessageScreenGui")
+	BanMessage.Name = ("BanMessage")
+	BanKick.Name = ("BanKick")
+	BanMessageTitle.Name = ("BanMessageTitle")
+	BanInformation.Name = ("BanInformation")
+	
+	--TextPosition
+	BanMessageTitle.TextXAlignment = ("Center")
+	BanMessageTitle.TextYAlignment = ("Center")
+	BanInformation.TextXAlignment = ("Center")
+	BanInformation.TextYAlignment = ("Center")
+	BanKick.TextXAlignment = ("Center")
+	BanKick.TextYAlignment = ("Center")
+	
+	--Position
+	BanMessage.Position = UDim2.new(0, 0, 0, 0)
+	BanKick.Position = UDim2.new(0.204, 0, 0.319, 0)
+	BanMessageTitle.Position = UDim2.new(0.204, 0, 0, 0)
+	BanInformation.Position = UDim2.new(0.204, 0, 0.059, 0)
+	
+	--Size
+	BanMessage.Size = UDim2.new(0, 1920, 0, 1080)
+	BanKick.Size = UDim2.new(0, 590, 0, 173)
+	BanMessageTitle.Size = UDim2.new(0, 590, 0, 50)
+	BanInformation.Size = UDim2.new(0, 590, 0, 287)
+	
+	BanKick.Text = ("Kicking in 10...")
+	wait(1)
+	BanKick.Text = ("Kicking in 9...")
+	wait(1)
+	BanKick.Text = ("Kicking in 8...")
+	wait(1)
+	BanKick.Text = ("Kicking in 7...")
+	wait(1)
+	BanKick.Text = ("Kicking in 6...")
+	wait(1)
+	BanKick.Text = ("Kicking in 6...")
+	wait(1)
+	BanKick.Text = ("Kicking in 5...")
+	wait(1)
+	BanKick.Text = ("Kicking in 4...")
+	wait(1)
+	BanKick.Text = ("Kicking in 3...")
+	wait(1)
+	BanKick.Text = ("Kicking in 2...")
+	wait(1)
+	BanKick.Text = ("Kicking in 1...")
+	wait(1)
+	BanKick.Text = ("Kicking...")
+	wait(1)
+	game.Players.LocalPlayer:Kick("You have been kicked from the game for using this GUI without being whitelisted. You probably have obtained this GUI without being verified by the creator. Please contact the person who you got it from to ask for verification for you. You cannot ask if you are unverified and did not get it from a verified source.")
+end
