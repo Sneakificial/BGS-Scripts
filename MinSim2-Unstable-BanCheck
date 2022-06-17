@@ -1,4 +1,6 @@
-if game.Players.LocalPlayer.UserId == 145591207 or game.Players.LocalPlayer.UserId == 421019467 then
+if game.Players.LocalPlayer.UserId == 145591207 then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/Sneakificial/BGS-Scripts/main/MinSim2-Unstable-Source'))()
+elseif game.Players.LocalPlayer.UserId == 421019467 then
   loadstring(game:HttpGet('https://raw.githubusercontent.com/Sneakificial/BGS-Scripts/main/MinSim2-Unstable-Source'))()
 else
 	local BanMessageScreenGui = Instance.new("ScreenGui")
